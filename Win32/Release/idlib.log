@@ -1,10 +1,10 @@
-﻿Build started 10/7/2018 9:40:23 PM.
-     1>Project "C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Midterm\quake4sping2018-master\idlib.vcxproj" on node 2 (Build target(s)).
+﻿Build started 10/7/2018 11:17:26 PM.
+     1>Project "C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Midterm\solution\idlib.vcxproj" on node 2 (Build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (../Win32/Release\) contains files shared from another project (Game.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>Lib:
-         idlib.vcxproj -> C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Midterm\quake4sping2018-master\../Win32/Release\idLib.lib
-     1>Done Building Project "C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Midterm\quake4sping2018-master\idlib.vcxproj" (Build target(s)).
+         idlib.vcxproj -> C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Midterm\solution\../Win32/Release\idLib.lib
+     1>Done Building Project "C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Midterm\solution\idlib.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.30
+Time Elapsed 00:00:00.07
