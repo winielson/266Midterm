@@ -1,6 +1,6 @@
  Gamex86
 
- Timestamp is 5bbb659b (Mon Oct 08 10:11:39 2018)
+ Timestamp is 5bbb6c1f (Mon Oct 08 10:39:27 2018)
 
  Preferred load address is 20000000
 
@@ -19194,12 +19194,12 @@
  0002:0003cc38       __real@41fab852            2037ec38     Weapon.obj
  0002:0003cc3c       __real@48000000            2037ec3c     Weapon.obj
  0002:0003cc40       ??_C@_0L@PALCELJK@Flashlight?$AA@ 2037ec40     WeaponBlaster.obj
- 0002:0003cc4c       ??_C@_04OHLPDOFO@Fire?$AA@ 2037ec4c     WeaponBlaster.obj
- 0002:0003cc54       ??_C@_07CMFAOAJI@Charged?$AA@ 2037ec54     WeaponBlaster.obj
- 0002:0003cc60       ??_7rvWeaponBlaster@@6B@   2037ec60     WeaponBlaster.obj
- 0002:0003cca8       ??_C@_0BA@CKJKNDFE@rvWeaponBlaster?$AA@ 2037eca8     WeaponBlaster.obj
- 0002:0003ccb8       ??_C@_0BN@DEFEFPHD@models?1weapons?1blaster?1flare?$AA@ 2037ecb8     WeaponBlaster.obj
- 0002:0003ccd8       ??_C@_06MDKBLGPP@Charge?$AA@ 2037ecd8     WeaponBlaster.obj
+ 0002:0003cc4c       ??_C@_06MDKBLGPP@Charge?$AA@ 2037ec4c     WeaponBlaster.obj
+ 0002:0003cc54       ??_C@_04OHLPDOFO@Fire?$AA@ 2037ec54     WeaponBlaster.obj
+ 0002:0003cc5c       ??_C@_07CMFAOAJI@Charged?$AA@ 2037ec5c     WeaponBlaster.obj
+ 0002:0003cc68       ??_7rvWeaponBlaster@@6B@   2037ec68     WeaponBlaster.obj
+ 0002:0003ccb0       ??_C@_0BA@CKJKNDFE@rvWeaponBlaster?$AA@ 2037ecb0     WeaponBlaster.obj
+ 0002:0003ccc0       ??_C@_0BN@DEFEFPHD@models?1weapons?1blaster?1flare?$AA@ 2037ecc0     WeaponBlaster.obj
  0002:0003cce0       ??_C@_0L@JEONLKOI@chargeGlow?$AA@ 2037ece0     WeaponBlaster.obj
  0002:0003ccec       ??_C@_0L@PPADADDF@chargeTime?$AA@ 2037ecec     WeaponBlaster.obj
  0002:0003ccf8       ??_C@_0M@NBCCCFLM@chargeDelay?$AA@ 2037ecf8     WeaponBlaster.obj
@@ -22905,66 +22905,66 @@
  0003:00008478       ?eventCallbacks@rvViewWeapon@@2PAU?$idEventFunc@VrvViewWeapon@@@@A 203ca478     Weapon.obj
  0003:00008488       ?stateCallbacks@rvWeapon@@1PAU?$rvStateFunc@VrvWeapon@@@@A 203ca488     Weapon.obj
  0003:000084b8       ?stateCallbacks@rvWeaponBlaster@@1PAU?$rvStateFunc@VrvWeaponBlaster@@@@A 203ca4b8     WeaponBlaster.obj
- 0003:000084f0       ?stateCallbacks@rvWeaponDarkMatterGun@@1PAU?$rvStateFunc@VrvWeaponDarkMatterGun@@@@A 203ca4f0     WeaponDarkMatterGun.obj
- 0003:00008510       ?stateCallbacks@rvWeaponGauntlet@@1PAU?$rvStateFunc@VrvWeaponGauntlet@@@@A 203ca510     WeaponGauntlet.obj
- 0003:00008538       ?stateCallbacks@rvWeaponGrenadeLauncher@@1PAU?$rvStateFunc@VrvWeaponGrenadeLauncher@@@@A 203ca538     WeaponGrenadeLauncher.obj
- 0003:00008558       ?stateCallbacks@rvWeaponHyperblaster@@1PAU?$rvStateFunc@VrvWeaponHyperblaster@@@@A 203ca558     WeaponHyperblaster.obj
- 0003:00008578       ?eventCallbacks@rvWeaponLightningGun@@2PAU?$idEventFunc@VrvWeaponLightningGun@@@@A 203ca578     WeaponLightningGun.obj
- 0003:00008588       ?stateCallbacks@rvWeaponLightningGun@@1PAU?$rvStateFunc@VrvWeaponLightningGun@@@@A 203ca588     WeaponLightningGun.obj
- 0003:000085b0       ?stateCallbacks@rvWeaponMachinegun@@1PAU?$rvStateFunc@VrvWeaponMachinegun@@@@A 203ca5b0     WeaponMachinegun.obj
- 0003:000085d8       ?stateCallbacks@rvWeaponNailgun@@1PAU?$rvStateFunc@VrvWeaponNailgun@@@@A 203ca5d8     WeaponNailgun.obj
- 0003:00008628       ?stateCallbacks@WeaponNapalmGun@@1PAU?$rvStateFunc@VWeaponNapalmGun@@@@A 203ca628     WeaponNapalmGun.obj
- 0003:00008660       ?eventCallbacks@rvWeaponRailgun@@2PAU?$idEventFunc@VrvWeaponRailgun@@@@A 203ca660     WeaponRailgun.obj
- 0003:00008670       ?stateCallbacks@rvWeaponRailgun@@1PAU?$rvStateFunc@VrvWeaponRailgun@@@@A 203ca670     WeaponRailgun.obj
- 0003:00008690       ?stateCallbacks@rvWeaponRocketLauncher@@1PAU?$rvStateFunc@VrvWeaponRocketLauncher@@@@A 203ca690     WeaponRocketLauncher.obj
- 0003:000086d0       ?stateCallbacks@rvWeaponShotgun@@1PAU?$rvStateFunc@VrvWeaponShotgun@@@@A 203ca6d0     WeaponShotgun.obj
- 0003:000086f0       ?eventCallbacks@rvCTF_AssaultPoint@@2PAU?$idEventFunc@VrvCTF_AssaultPoint@@@@A 203ca6f0     CTF.obj
- 0003:00008708       ?eventCallbacks@rvCTFAssaultPlayerStart@@2PAU?$idEventFunc@VrvCTFAssaultPlayerStart@@@@A 203ca708     CTF.obj
- 0003:00008718       ?type@rvDMGameState@@0W4gameStateType_t@@A 203ca718     GameState.obj
- 0003:0000871c       ?type@rvTeamDMGameState@@0W4gameStateType_t@@A 203ca71c     GameState.obj
- 0003:00008720       ?type@rvCTFGameState@@0W4gameStateType_t@@A 203ca720     GameState.obj
- 0003:00008724       ?type@rvTourneyGameState@@0W4gameStateType_t@@A 203ca724     GameState.obj
- 0003:00008728       ?si_voiceChat@@3VidCVar@@A 203ca728     VoiceComms.obj
- 0003:0000875c       ?g_voiceChatDebug@@3VidCVar@@A 203ca75c     VoiceComms.obj
- 0003:00008790       ?lastRailShot@rvStatManager@@2PAHA 203ca790     StatManager.obj
- 0003:00008810       ?statManager@@3PAVrvStatManager@@A 203ca810     StatManager.obj
- 0003:00008814       ?inGameAwardInfo@@3PAUinGameAwardInfo_t@@A 203ca814     StatManager.obj
- 0003:0000883c       ?endGameAwardInfo@@3PAUendGameAwardInfo_t@@A 203ca83c     StatManager.obj
- 0003:00008868       ?TWO_PI@idMath@@2MB        203ca868     idLib:Math.obj
- 0003:0000886c       ?HALF_PI@idMath@@2MB       203ca86c     idLib:Math.obj
- 0003:00008870       ?ONEFOURTH_PI@idMath@@2MB  203ca870     idLib:Math.obj
- 0003:00008874       ?THREEFOURTHS_PI@idMath@@2MB 203ca874     idLib:Math.obj
- 0003:00008878       ?M_DEG2RAD@idMath@@2MB     203ca878     idLib:Math.obj
- 0003:0000887c       ?M_RAD2DEG@idMath@@2MB     203ca87c     idLib:Math.obj
- 0003:00008898       ?sOK@Memory@@0_NA          203ca898     idLib:Heap.obj
- 0003:0000889c       ?vec4_one@@3VidVec4@@A     203ca89c     idLib:Vector.obj
- 0003:000088b0       ?formatList@@3PAUformatList_t@@A 203ca8b0     idLib:Str.obj
- 0003:000088c8       ?numFormatList@@3HA        203ca8c8     idLib:Str.obj
- 0003:000088cc       ?units@@3PAY03PBDA         203ca8cc     idLib:Str.obj
- 0003:000088f0       ?g_color_table@@3PAVidVec4@@A 203ca8f0     idLib:Str.obj
- 0003:000089f0       ?INVALID_INDEX@idHashIndex@@0PAHA 203ca9f0     idLib:HashIndex.obj
- 0003:000089f4       ?globalKeys@idDict@@0VidStrPool@@A 203ca9f4     idLib:Dict.obj
- 0003:00008a24       ?globalValues@idDict@@0VidStrPool@@A 203caa24     idLib:Dict.obj
- 0003:00008a5c       ?colorBlack@@3VidVec4@@A   203caa5c     idLib:Lib.obj
- 0003:00008a6c       ?colorWhite@@3VidVec4@@A   203caa6c     idLib:Lib.obj
- 0003:00008a7c       ?colorRed@@3VidVec4@@A     203caa7c     idLib:Lib.obj
- 0003:00008a8c       ?colorGreen@@3VidVec4@@A   203caa8c     idLib:Lib.obj
- 0003:00008a9c       ?colorBlue@@3VidVec4@@A    203caa9c     idLib:Lib.obj
- 0003:00008aac       ?colorYellow@@3VidVec4@@A  203caaac     idLib:Lib.obj
- 0003:00008abc       ?colorMagenta@@3VidVec4@@A 203caabc     idLib:Lib.obj
- 0003:00008acc       ?colorCyan@@3VidVec4@@A    203caacc     idLib:Lib.obj
- 0003:00008adc       ?colorOrange@@3VidVec4@@A  203caadc     idLib:Lib.obj
- 0003:00008aec       ?colorPurple@@3VidVec4@@A  203caaec     idLib:Lib.obj
- 0003:00008afc       ?colorPink@@3VidVec4@@A    203caafc     idLib:Lib.obj
- 0003:00008b0c       ?colorBrown@@3VidVec4@@A   203cab0c     idLib:Lib.obj
- 0003:00008b1c       ?colorLtGrey@@3VidVec4@@A  203cab1c     idLib:Lib.obj
- 0003:00008b2c       ?colorMdGrey@@3VidVec4@@A  203cab2c     idLib:Lib.obj
- 0003:00008b3c       ?colorDkGrey@@3VidVec4@@A  203cab3c     idLib:Lib.obj
- 0003:00008b58       ?mat2_identity@@3VidMat2@@A 203cab58     idLib:Matrix.obj
- 0003:00008b68       ?mat3_identity@@3VidMat3@@A 203cab68     idLib:Matrix.obj
- 0003:00008ba8       ?default_punctuations@@3PAUpunctuation_s@@A 203caba8     idLib:Lexer.obj
- 0003:00008d60       ?sCompiledFileSuffix@Lexer@@2VidStr@@B 203cad60     idLib:Lexer.obj
- 0003:00008d88       ?base@idTimer@@0NA         203cad88     idLib:Timer.obj
+ 0003:000084f8       ?stateCallbacks@rvWeaponDarkMatterGun@@1PAU?$rvStateFunc@VrvWeaponDarkMatterGun@@@@A 203ca4f8     WeaponDarkMatterGun.obj
+ 0003:00008518       ?stateCallbacks@rvWeaponGauntlet@@1PAU?$rvStateFunc@VrvWeaponGauntlet@@@@A 203ca518     WeaponGauntlet.obj
+ 0003:00008540       ?stateCallbacks@rvWeaponGrenadeLauncher@@1PAU?$rvStateFunc@VrvWeaponGrenadeLauncher@@@@A 203ca540     WeaponGrenadeLauncher.obj
+ 0003:00008560       ?stateCallbacks@rvWeaponHyperblaster@@1PAU?$rvStateFunc@VrvWeaponHyperblaster@@@@A 203ca560     WeaponHyperblaster.obj
+ 0003:00008580       ?eventCallbacks@rvWeaponLightningGun@@2PAU?$idEventFunc@VrvWeaponLightningGun@@@@A 203ca580     WeaponLightningGun.obj
+ 0003:00008590       ?stateCallbacks@rvWeaponLightningGun@@1PAU?$rvStateFunc@VrvWeaponLightningGun@@@@A 203ca590     WeaponLightningGun.obj
+ 0003:000085b8       ?stateCallbacks@rvWeaponMachinegun@@1PAU?$rvStateFunc@VrvWeaponMachinegun@@@@A 203ca5b8     WeaponMachinegun.obj
+ 0003:000085e0       ?stateCallbacks@rvWeaponNailgun@@1PAU?$rvStateFunc@VrvWeaponNailgun@@@@A 203ca5e0     WeaponNailgun.obj
+ 0003:00008630       ?stateCallbacks@WeaponNapalmGun@@1PAU?$rvStateFunc@VWeaponNapalmGun@@@@A 203ca630     WeaponNapalmGun.obj
+ 0003:00008668       ?eventCallbacks@rvWeaponRailgun@@2PAU?$idEventFunc@VrvWeaponRailgun@@@@A 203ca668     WeaponRailgun.obj
+ 0003:00008678       ?stateCallbacks@rvWeaponRailgun@@1PAU?$rvStateFunc@VrvWeaponRailgun@@@@A 203ca678     WeaponRailgun.obj
+ 0003:00008698       ?stateCallbacks@rvWeaponRocketLauncher@@1PAU?$rvStateFunc@VrvWeaponRocketLauncher@@@@A 203ca698     WeaponRocketLauncher.obj
+ 0003:000086d8       ?stateCallbacks@rvWeaponShotgun@@1PAU?$rvStateFunc@VrvWeaponShotgun@@@@A 203ca6d8     WeaponShotgun.obj
+ 0003:000086f8       ?eventCallbacks@rvCTF_AssaultPoint@@2PAU?$idEventFunc@VrvCTF_AssaultPoint@@@@A 203ca6f8     CTF.obj
+ 0003:00008710       ?eventCallbacks@rvCTFAssaultPlayerStart@@2PAU?$idEventFunc@VrvCTFAssaultPlayerStart@@@@A 203ca710     CTF.obj
+ 0003:00008720       ?type@rvDMGameState@@0W4gameStateType_t@@A 203ca720     GameState.obj
+ 0003:00008724       ?type@rvTeamDMGameState@@0W4gameStateType_t@@A 203ca724     GameState.obj
+ 0003:00008728       ?type@rvCTFGameState@@0W4gameStateType_t@@A 203ca728     GameState.obj
+ 0003:0000872c       ?type@rvTourneyGameState@@0W4gameStateType_t@@A 203ca72c     GameState.obj
+ 0003:00008730       ?si_voiceChat@@3VidCVar@@A 203ca730     VoiceComms.obj
+ 0003:00008764       ?g_voiceChatDebug@@3VidCVar@@A 203ca764     VoiceComms.obj
+ 0003:00008798       ?lastRailShot@rvStatManager@@2PAHA 203ca798     StatManager.obj
+ 0003:00008818       ?statManager@@3PAVrvStatManager@@A 203ca818     StatManager.obj
+ 0003:0000881c       ?inGameAwardInfo@@3PAUinGameAwardInfo_t@@A 203ca81c     StatManager.obj
+ 0003:00008844       ?endGameAwardInfo@@3PAUendGameAwardInfo_t@@A 203ca844     StatManager.obj
+ 0003:00008870       ?TWO_PI@idMath@@2MB        203ca870     idLib:Math.obj
+ 0003:00008874       ?HALF_PI@idMath@@2MB       203ca874     idLib:Math.obj
+ 0003:00008878       ?ONEFOURTH_PI@idMath@@2MB  203ca878     idLib:Math.obj
+ 0003:0000887c       ?THREEFOURTHS_PI@idMath@@2MB 203ca87c     idLib:Math.obj
+ 0003:00008880       ?M_DEG2RAD@idMath@@2MB     203ca880     idLib:Math.obj
+ 0003:00008884       ?M_RAD2DEG@idMath@@2MB     203ca884     idLib:Math.obj
+ 0003:000088a0       ?sOK@Memory@@0_NA          203ca8a0     idLib:Heap.obj
+ 0003:000088a4       ?vec4_one@@3VidVec4@@A     203ca8a4     idLib:Vector.obj
+ 0003:000088b8       ?formatList@@3PAUformatList_t@@A 203ca8b8     idLib:Str.obj
+ 0003:000088d0       ?numFormatList@@3HA        203ca8d0     idLib:Str.obj
+ 0003:000088d4       ?units@@3PAY03PBDA         203ca8d4     idLib:Str.obj
+ 0003:000088f8       ?g_color_table@@3PAVidVec4@@A 203ca8f8     idLib:Str.obj
+ 0003:000089f8       ?INVALID_INDEX@idHashIndex@@0PAHA 203ca9f8     idLib:HashIndex.obj
+ 0003:000089fc       ?globalKeys@idDict@@0VidStrPool@@A 203ca9fc     idLib:Dict.obj
+ 0003:00008a2c       ?globalValues@idDict@@0VidStrPool@@A 203caa2c     idLib:Dict.obj
+ 0003:00008a64       ?colorBlack@@3VidVec4@@A   203caa64     idLib:Lib.obj
+ 0003:00008a74       ?colorWhite@@3VidVec4@@A   203caa74     idLib:Lib.obj
+ 0003:00008a84       ?colorRed@@3VidVec4@@A     203caa84     idLib:Lib.obj
+ 0003:00008a94       ?colorGreen@@3VidVec4@@A   203caa94     idLib:Lib.obj
+ 0003:00008aa4       ?colorBlue@@3VidVec4@@A    203caaa4     idLib:Lib.obj
+ 0003:00008ab4       ?colorYellow@@3VidVec4@@A  203caab4     idLib:Lib.obj
+ 0003:00008ac4       ?colorMagenta@@3VidVec4@@A 203caac4     idLib:Lib.obj
+ 0003:00008ad4       ?colorCyan@@3VidVec4@@A    203caad4     idLib:Lib.obj
+ 0003:00008ae4       ?colorOrange@@3VidVec4@@A  203caae4     idLib:Lib.obj
+ 0003:00008af4       ?colorPurple@@3VidVec4@@A  203caaf4     idLib:Lib.obj
+ 0003:00008b04       ?colorPink@@3VidVec4@@A    203cab04     idLib:Lib.obj
+ 0003:00008b14       ?colorBrown@@3VidVec4@@A   203cab14     idLib:Lib.obj
+ 0003:00008b24       ?colorLtGrey@@3VidVec4@@A  203cab24     idLib:Lib.obj
+ 0003:00008b34       ?colorMdGrey@@3VidVec4@@A  203cab34     idLib:Lib.obj
+ 0003:00008b44       ?colorDkGrey@@3VidVec4@@A  203cab44     idLib:Lib.obj
+ 0003:00008b60       ?mat2_identity@@3VidMat2@@A 203cab60     idLib:Matrix.obj
+ 0003:00008b70       ?mat3_identity@@3VidMat3@@A 203cab70     idLib:Matrix.obj
+ 0003:00008bb0       ?default_punctuations@@3PAUpunctuation_s@@A 203cabb0     idLib:Lexer.obj
+ 0003:00008d68       ?sCompiledFileSuffix@Lexer@@2VidStr@@B 203cad68     idLib:Lexer.obj
+ 0003:00008d90       ?base@idTimer@@0NA         203cad90     idLib:Timer.obj
  0003:00009ef0       __fltused                  203cbef0     LIBCMT:fpinit.obj
  0003:00009ef4       __ldused                   203cbef4     LIBCMT:fpinit.obj
  0003:0000a070       __mbctype                  203cc070     LIBCMT:mbctype.obj
@@ -37034,23 +37034,23 @@
  0003:00006f90       _stroggHitscanTint         203c8f90     Player.obj
  0003:00006fa0       _defaultHitscanTint        203c8fa0     Player.obj
  0003:00007ee0       ?lastLineNumber@?BE@??Execute@idInterpreter@@QAE_NXZ@4HA 203c9ee0     Script_Interpreter.obj
- 0003:00008880       ?exponentSign@?1??BitsToFloat@idMath@@SAMHHH@Z@4PAHA 203ca880     idLib:Math.obj
- 0003:00008888       _mem_total_allocs          203ca888     idLib:Heap.obj
- 0003:00008a54       _colorMask                 203caa54     idLib:Lib.obj
- 0003:00008b4c       _DEFAULT_GRAVITY_VEC3      203cab4c     idLib:Lib.obj
- 0003:00008b8c       ?next@?1??ToQuat@idMat3@@QBE?AVidQuat@@XZ@4PAHA 203cab8c     idLib:Matrix.obj
- 0003:00008b98       ?next@?1??ToRotation@idMat3@@QBE?AVidRotation@@XZ@4PAHA 203cab98     idLib:Matrix.obj
- 0003:00008d80       ?sign@?1??BitsToDir@idBitMsg@@SA?AVidVec3@@HH@Z@4PAMA 203cad80     idLib:BitMsg.obj
- 0003:00008d90       _boxVertPlanes             203cad90     idLib:Frustum.obj
- 0003:00008db0       _capPointIndex             203cadb0     idLib:Frustum.obj
- 0003:00008dd0       _boxVertPlanes             203cadd0     idLib:Box.obj
- 0003:00008df0       _boxVertEdges              203cadf0     idLib:Box.obj
- 0003:00008e50       _boxEdgePlanes             203cae50     idLib:Box.obj
- 0003:00008eb0       _boxEdgeVerts              203caeb0     idLib:Box.obj
- 0003:00008f10       _boxPlaneBitsSilVerts      203caf10     idLib:Box.obj
- 0003:00009610       _lcp_showFailures          203cb610     idLib:Lcp.obj
- 0003:00009648       _PADDING                   203cb648     idLib:MD4.obj
- 0003:00009688       _crctable                  203cb688     idLib:CRC32.obj
+ 0003:00008888       ?exponentSign@?1??BitsToFloat@idMath@@SAMHHH@Z@4PAHA 203ca888     idLib:Math.obj
+ 0003:00008890       _mem_total_allocs          203ca890     idLib:Heap.obj
+ 0003:00008a5c       _colorMask                 203caa5c     idLib:Lib.obj
+ 0003:00008b54       _DEFAULT_GRAVITY_VEC3      203cab54     idLib:Lib.obj
+ 0003:00008b94       ?next@?1??ToQuat@idMat3@@QBE?AVidQuat@@XZ@4PAHA 203cab94     idLib:Matrix.obj
+ 0003:00008ba0       ?next@?1??ToRotation@idMat3@@QBE?AVidRotation@@XZ@4PAHA 203caba0     idLib:Matrix.obj
+ 0003:00008d88       ?sign@?1??BitsToDir@idBitMsg@@SA?AVidVec3@@HH@Z@4PAMA 203cad88     idLib:BitMsg.obj
+ 0003:00008d98       _boxVertPlanes             203cad98     idLib:Frustum.obj
+ 0003:00008db8       _capPointIndex             203cadb8     idLib:Frustum.obj
+ 0003:00008dd8       _boxVertPlanes             203cadd8     idLib:Box.obj
+ 0003:00008df8       _boxVertEdges              203cadf8     idLib:Box.obj
+ 0003:00008e58       _boxEdgePlanes             203cae58     idLib:Box.obj
+ 0003:00008eb8       _boxEdgeVerts              203caeb8     idLib:Box.obj
+ 0003:00008f18       _boxPlaneBitsSilVerts      203caf18     idLib:Box.obj
+ 0003:00009618       _lcp_showFailures          203cb618     idLib:Lcp.obj
+ 0003:00009650       _PADDING                   203cb650     idLib:MD4.obj
+ 0003:00009690       _crctable                  203cb690     idLib:CRC32.obj
  0003:00009a90       _SIMD_W_maxShort           203cba90     idLib:Simd_SSE.obj
  0003:00009aa0       _SIMD_SP_firstSignBit      203cbaa0     idLib:Simd_SSE.obj
  0003:00009ab0       _SIMD_SP_signBit           203cbab0     idLib:Simd_SSE.obj

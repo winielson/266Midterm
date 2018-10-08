@@ -214,9 +214,7 @@ void rvWeaponBlaster::PostSave(void) {
 
 /*
 ===============================================================================
-
 States
-
 ===============================================================================
 */
 
@@ -224,6 +222,7 @@ CLASS_STATES_DECLARATION(rvWeaponBlaster)
 STATE("Raise", rvWeaponBlaster::State_Raise)
 STATE("Lower", rvWeaponBlaster::State_Lower)
 STATE("Idle", rvWeaponBlaster::State_Idle)
+STATE("Charge", rvWeaponBlaster::State_Charge)
 STATE("Charged", rvWeaponBlaster::State_Charged)
 STATE("Fire", rvWeaponBlaster::State_Fire)
 STATE("Flashlight", rvWeaponBlaster::State_Flashlight)
@@ -397,7 +396,7 @@ stateResult_t rvWeaponBlaster::State_Charged(const stateParms_t& parms) {
 /*
 ================
 rvWeaponBlaster::State_Fire
-================s
+================
 */
 stateResult_t rvWeaponBlaster::State_Fire(const stateParms_t& parms) {
 	enum {
