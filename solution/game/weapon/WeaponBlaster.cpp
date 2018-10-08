@@ -223,8 +223,8 @@ States
 CLASS_STATES_DECLARATION(rvWeaponBlaster)
 STATE("Raise", rvWeaponBlaster::State_Raise)
 STATE("Lower", rvWeaponBlaster::State_Lower)
-//STATE("Idle", rvWeaponBlaster::State_Idle)
-//STATE("Charged", rvWeaponBlaster::State_Charged)
+STATE("Idle", rvWeaponBlaster::State_Idle)
+STATE("Charged", rvWeaponBlaster::State_Charged)
 STATE("Fire", rvWeaponBlaster::State_Fire)
 STATE("Flashlight", rvWeaponBlaster::State_Flashlight)
 END_CLASS_STATES
