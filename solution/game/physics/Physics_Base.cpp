@@ -630,7 +630,7 @@ bool idPhysics_Base::HasGroundContacts( void ) const {
 			return true;
 		}
 	}
-	return false;
+	return false; //was false
 }
 
 /*
@@ -646,7 +646,7 @@ bool idPhysics_Base::IsGroundEntity( int entityNum ) const {
 			return true;
 		}
 	}
-	return false;
+	return false; //breaks if false
 }
 
 /*
@@ -662,7 +662,7 @@ bool idPhysics_Base::IsGroundClipModel( int entityNum, int id ) const {
 			return true;
 		}
 	}
-	return false;
+	return false; //was false
 }
 
 /*

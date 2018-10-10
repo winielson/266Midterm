@@ -176,7 +176,7 @@ bool idPhysics_Player::SlideMove( bool gravity, bool stepUp, bool stepDown, bool
 		endVelocity = current.velocity + gravityVector * frametime;
 		current.velocity = ( current.velocity + endVelocity ) * 0.5f;
 		primal_velocity = endVelocity;
-		if ( groundPlane ) {
+		if ( groundPlane || walking ) { //10/10/2018 added || walking
 			// slide along the ground plane
 			current.velocity.ProjectOntoPlane( groundTrace.c.normal, OVERCLIP );
 		}
@@ -1055,7 +1055,7 @@ void idPhysics_Player::CheckGround( bool checkStuck ) {
 	// if the trace didn't hit anything, we are in free fall
 	if ( groundTrace.fraction == 1.0f ) {
 		groundPlane = false;
-		walking = false;
+		walking = false; //here
 		groundEntityPtr = NULL;
 		return;
 	}
@@ -1070,7 +1070,7 @@ void idPhysics_Player::CheckGround( bool checkStuck ) {
 		}
 
 		groundPlane = false;
-		walking = false;
+		walking = true; //false
 		return;
 	}
 	
@@ -1093,8 +1093,8 @@ void idPhysics_Player::CheckGround( bool checkStuck ) {
 			if ( current.velocity * gravityNormal > 150.0f ) {
 				current.velocity -= ( current.velocity * gravityNormal - 150.0f ) * gravityNormal;
 			}
-			groundPlane = true;
-			walking = false;
+			groundPlane = false;
+			walking = true;//false
 		}
 
 		return;
@@ -1115,7 +1115,7 @@ void idPhysics_Player::CheckGround( bool checkStuck ) {
 		if ( (current.velocity * -gravityNormal) < -200.0f ) {
 			// don't allow another jump for a little while
 			current.movementFlags |= PMF_TIME_LAND;
-			current.movementTime = 250;
+			current.movementTime = 250; //250
 		}		
 	}
 
@@ -1220,6 +1220,7 @@ void idPhysics_Player::CheckLadder( void ) {
 
 	// forward vector orthogonal to gravity
 	forward = viewForward - (gravityNormal * viewForward) * gravityNormal;
+	//forward = viewForward - gravityNormal;
 	forward.Normalize();
 
 	if ( walking ) {

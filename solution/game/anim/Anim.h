@@ -22,6 +22,7 @@ const int ANIMCHANNEL_LEGS			= 2;
 const int ANIMCHANNEL_HEAD			= 3;
 const int ANIMCHANNEL_EYELIDS		= 4;
 
+
 // for converting from 24 frames per second to milliseconds
 ID_INLINE int FRAME2MS( int framenum ) {
 	return ( framenum * 1000 ) / 24;

@@ -1672,7 +1672,7 @@ void idPlayer::Init( void ) {
 	// initialize the script variables
 	memset ( &pfl, 0, sizeof( pfl ) );
 	pfl.onGround = true;
-	pfl.noFallingDamage = false;
+	pfl.noFallingDamage = true;
 
 	// Start in idle
 	SetAnimState( ANIMCHANNEL_TORSO, "Torso_Idle", 0 );
@@ -7454,7 +7454,7 @@ void idPlayer::CrashLand( const idVec3 &oldOrigin, const idVec3 &oldVelocity ) {
 	}
 
 	gravityNormal = physicsObj.GetGravityNormal();
-
+	
 	// if the player wasn't going down
 	if ( ( oldVelocity * -gravityNormal ) >= 0.0f ) {
 		return;
