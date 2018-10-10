@@ -229,7 +229,7 @@ stateResult_t rvWeaponMachinegun::State_Fire ( const stateParms_t& parms ) {
 			if ( wsfl.zoom ) {
 				nextAttackTime = gameLocal.time + (altFireRate * owner->PowerUpModifier ( PMOD_FIRERATE ));
 				Attack ( true, 3, spreadZoom, 0, 1.0f ); //Changed num_attacks from 1 to 3
-				fireHeld = false; //changed from true
+				fireHeld = true; //changed from true
 			} else {
 				nextAttackTime = gameLocal.time + (fireRate * owner->PowerUpModifier ( PMOD_FIRERATE ));
 				Attack ( false, 3, spread, 0, 1.0f ); //Changed num_attacks from 1 to 3
