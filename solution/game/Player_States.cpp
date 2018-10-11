@@ -581,7 +581,8 @@ idPlayer::State_Legs_Run_Forward
 ================
 */
 stateResult_t idPlayer::State_Legs_Run_Forward ( const stateParms_t& parms ) {
-	if ( !pfl.jump && pfl.onGround && !pfl.crouch && !pfl.backward && pfl.forward ) {
+//	if (!pfl.jump && pfl.onGround && !pfl.crouch && !pfl.backward && pfl.forward) original statement
+	if (!pfl.jump && pfl.onGround && !pfl.crouch && !pfl.backward && pfl.forward) {
 		if( usercmd.buttons & BUTTON_RUN ) {
 			return SRESULT_WAIT;
 		} else {
@@ -657,7 +658,7 @@ idPlayer::State_Legs_Walk_Forward
 ================
 */
 stateResult_t idPlayer::State_Legs_Walk_Forward ( const stateParms_t& parms ) {
-	if ( !pfl.jump && pfl.onGround && !pfl.crouch && !pfl.backward && pfl.forward ) {
+	if (!pfl.jump && pfl.onGround && !pfl.crouch && !pfl.backward && pfl.forward) {
 		if( !(usercmd.buttons & BUTTON_RUN) ) {
 			return SRESULT_WAIT;
 		} else {

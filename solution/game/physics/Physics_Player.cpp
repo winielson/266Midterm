@@ -19,17 +19,17 @@ const float PM_AIRACCELERATE_MP	= 1.18f;
 const float PM_WATERACCELERATE	= 4.0f;
 const float PM_FLYACCELERATE	= 8.0f;
 
-const float PM_FRICTION			= 6.0f;
+const float PM_FRICTION			= 6.0f; //BIGBOY:6.0f if 0.0 iceskates
 const float PM_AIRFRICTION		= 0.0f;
 const float PM_WATERFRICTION	= 2.0f;
 const float PM_FLYFRICTION		= 3.0f;
 const float PM_NOCLIPFRICTION	= 12.0f;
 // RAVEN BEGIN
 // bdube: sliding
-const float PM_SLIDEFRICTION    = 0.5f;
+const float PM_SLIDEFRICTION    = 0.0f;  //BIGBOY:0.5f
 // RAVEN END
 
-const float MIN_WALK_NORMAL		= 0.7f;		// can't walk on very steep slopes
+const float MIN_WALK_NORMAL		= 0.7f;		//BIGBOY: origin 0.7// can't walk on very steep slopes 
 const float OVERCLIP			= 1.001f;
 
 // movementFlags
@@ -168,7 +168,7 @@ bool idPhysics_Player::SlideMove( bool gravity, bool stepUp, bool stepDown, bool
 	trace_t		trace, stepTrace, downTrace;
 	bool		nearGround, stepped, pushed;
 
-	numbumps = 4;
+	numbumps = 4; //4
 
 	primal_velocity = current.velocity;
 
@@ -176,7 +176,7 @@ bool idPhysics_Player::SlideMove( bool gravity, bool stepUp, bool stepDown, bool
 		endVelocity = current.velocity + gravityVector * frametime;
 		current.velocity = ( current.velocity + endVelocity ) * 0.5f;
 		primal_velocity = endVelocity;
-		if ( groundPlane ) {
+		if ( groundPlane ) { //10/10/2018 added || walking doesn't do anything
 			// slide along the ground plane
 			current.velocity.ProjectOntoPlane( groundTrace.c.normal, OVERCLIP );
 		}
@@ -189,10 +189,10 @@ bool idPhysics_Player::SlideMove( bool gravity, bool stepUp, bool stepDown, bool
 
 	// never turn against the ground plane
 	if ( groundPlane ) {
-		numplanes = 1;
+		numplanes = 1;//1
 		planes[0] = groundTrace.c.normal;
 	} else {
-		numplanes = 0;
+		numplanes = 0;//0
 	}
 
 	// never turn against original velocity
@@ -236,7 +236,7 @@ bool idPhysics_Player::SlideMove( bool gravity, bool stepUp, bool stepDown, bool
 			}
 
 			// may only step up if near the ground or on a ladder
-			if ( nearGround ) {
+			if ( nearGround ) { 
 
 				// step up
 				stepEnd = current.origin - maxStepHeight * gravityNormal;
@@ -1055,7 +1055,7 @@ void idPhysics_Player::CheckGround( bool checkStuck ) {
 	// if the trace didn't hit anything, we are in free fall
 	if ( groundTrace.fraction == 1.0f ) {
 		groundPlane = false;
-		walking = false;
+		walking = false; //here
 		groundEntityPtr = NULL;
 		return;
 	}
@@ -1070,12 +1070,12 @@ void idPhysics_Player::CheckGround( bool checkStuck ) {
 		}
 
 		groundPlane = false;
-		walking = false;
+		walking =false; //false
 		return;
 	}
 	
 	// slopes that are too steep will not be considered onground
-	if ( ( groundTrace.c.normal * -gravityNormal ) < MIN_WALK_NORMAL ) {
+	if ((groundTrace.c.normal * -gravityNormal) < MIN_WALK_NORMAL) { //BIGBOY: origin a < MIN_WALK_NORMAL //for iceskating a < 100.0f
 		if ( debugLevel ) {
 			gameLocal.Printf( "%i:steep\n", c_pmove );
 		}
@@ -1093,8 +1093,8 @@ void idPhysics_Player::CheckGround( bool checkStuck ) {
 			if ( current.velocity * gravityNormal > 150.0f ) {
 				current.velocity -= ( current.velocity * gravityNormal - 150.0f ) * gravityNormal;
 			}
-			groundPlane = true;
-			walking = false;
+			groundPlane = false; //was false
+			walking = true; //BIGBOY: If true can walk on slopes, if groundPlane in loop = true aswell does not work
 		}
 
 		return;
@@ -1115,7 +1115,7 @@ void idPhysics_Player::CheckGround( bool checkStuck ) {
 		if ( (current.velocity * -gravityNormal) < -200.0f ) {
 			// don't allow another jump for a little while
 			current.movementFlags |= PMF_TIME_LAND;
-			current.movementTime = 250;
+			current.movementTime = 250; //250
 		}		
 	}
 
@@ -1220,6 +1220,7 @@ void idPhysics_Player::CheckLadder( void ) {
 
 	// forward vector orthogonal to gravity
 	forward = viewForward - (gravityNormal * viewForward) * gravityNormal;
+	//forward = viewForward - gravityNormal;
 	forward.Normalize();
 
 	if ( walking ) {

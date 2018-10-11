@@ -607,9 +607,9 @@ idPhysics_Base::GetContactNormal
 const idVec3 idPhysics_Base::GetGroundContactNormal() const {
 	idVec3 normal( vec3_zero );
 
-	for( int ix = 0; ix < GetNumContacts(); ++ix ) {
-		if ( GetContact(ix).normal * -gravityNormal > 0.0f ) {
-			normal += GetContact( ix ).normal;
+	for (int ix = 0; ix < GetNumContacts(); ++ix) {
+		if (GetContact(ix).normal * -gravityNormal > 0.0f) {
+			normal += GetContact(ix).normal;
 		}
 	}
 
@@ -630,7 +630,7 @@ bool idPhysics_Base::HasGroundContacts( void ) const {
 			return true;
 		}
 	}
-	return false;
+	return false; //was false
 }
 
 /*
@@ -646,7 +646,7 @@ bool idPhysics_Base::IsGroundEntity( int entityNum ) const {
 			return true;
 		}
 	}
-	return false;
+	return false; //breaks if false
 }
 
 /*
@@ -662,7 +662,7 @@ bool idPhysics_Base::IsGroundClipModel( int entityNum, int id ) const {
 			return true;
 		}
 	}
-	return false;
+	return false; //was false
 }
 
 /*
