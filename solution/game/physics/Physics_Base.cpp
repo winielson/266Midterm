@@ -607,9 +607,9 @@ idPhysics_Base::GetContactNormal
 const idVec3 idPhysics_Base::GetGroundContactNormal() const {
 	idVec3 normal( vec3_zero );
 
-	for( int ix = 0; ix < GetNumContacts(); ++ix ) {
-		if ( GetContact(ix).normal * -gravityNormal > 0.0f ) {
-			normal += GetContact( ix ).normal;
+	for (int ix = 0; ix < GetNumContacts(); ++ix) {
+		if (GetContact(ix).normal * -gravityNormal > 0.0f) {
+			normal += GetContact(ix).normal;
 		}
 	}
 
