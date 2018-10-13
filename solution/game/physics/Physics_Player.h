@@ -61,6 +61,9 @@ public:
 	void					Restore( idRestoreGame *savefile );
 
 							// initialisation
+	//BIGBOY
+	void					SetHeight(const float newHeight, const float newViewHeight);
+
 	void					SetSpeed( const float newWalkSpeed, const float newCrouchSpeed );
 	void					SetMaxStepHeight( const float newMaxStepHeight );
 	float					GetMaxStepHeight( void ) const;
@@ -125,6 +128,11 @@ private:
 	playerPState_t			saved;
 
 	// properties
+
+	//BIGBOY
+	float					height;
+	float					viewHeight;
+
 	float					walkSpeed;
 	float					crouchSpeed;
 	float					maxStepHeight;
@@ -139,6 +147,7 @@ private:
 	int						framemsec;
 	float					frametime;
 	float					playerSpeed;
+	float					playerHeight;
 	idVec3					viewForward;
 	idVec3					viewRight;
 

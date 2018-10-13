@@ -124,6 +124,9 @@ enum {
 	POWERUP_HASTE,
 	POWERUP_REGENERATION,
 	POWERUP_INVISIBILITY,
+
+	//BIGBOY powerups
+	POWERUP_SHROOM,
 		
 	// ctf powerups
 	POWERUP_CTF_MARINEFLAG,
@@ -149,7 +152,11 @@ enum {
 };
 
 enum {
-	PMOD_SPEED = 0,
+	//BIGBOY powerup enum
+	PMOD_SIZE = 0,
+	PMOD_VIEW,
+
+	PMOD_SPEED,
 	PMOD_PROJECTILE_DAMAGE,
 	PMOD_MELEE_DAMAGE,
 	PMOD_MELEE_DISTANCE,
@@ -1028,6 +1035,10 @@ private:
 	void					BobCycle( const idVec3 &pushVelocity );
 	void					EvaluateControls( void );
 	void					AdjustSpeed( void );
+
+	//BIGBOY AdjustSize
+	void					AdjustSize(void);
+
 	void					AdjustBodyAngles( void );
 	void					Move( void );
 	void					SetSpectateOrigin( void );

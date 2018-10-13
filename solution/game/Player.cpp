@@ -895,12 +895,16 @@ bool idInventory::Give( idPlayer *owner, const idDict &spawnArgs, const char *st
 		if ( owner->health >= maxHealth ) {
 			return false;
 		}
-	} else if ( idStr::FindText( statname, "inclip_" ) == 0 ) {
-		i = owner->SlotForWeapon ( statname + 7 );
-		if ( i != -1 && !checkOnly ) {
+	}
+	else if (idStr::FindText(statname, "inclip_") == 0) {
+		i = owner->SlotForWeapon(statname + 7);
+		if (i != -1 && !checkOnly) {
 			// set, don't add. not going over the clip size limit.
-			clip[ i ] = atoi( value );
+			clip[i] = atoi(value);
 		}
+
+	} else if (!idStr::Icmp(statname, "shroom") && !checkOnly) {
+		GivePowerUp(owner, POWERUP_SHROOM, -1); //BIGBOY no sec2ms
 	} else if ( !idStr::Icmp( statname, "quad" ) && !checkOnly ) {
 		GivePowerUp( owner, POWERUP_QUADDAMAGE, SEC2MS( atof( value ) ) );
 	} else if ( !idStr::Icmp( statname, "regen" ) && !checkOnly ) {
@@ -4280,6 +4284,23 @@ idPlayer::PowerUpModifier
 */
 float idPlayer::PowerUpModifier( int type ) {
 	float mod = 1.0f;
+//	float p;
+
+	//BIGBOY s
+	//Shroom ENUMERATOR
+	if (PowerUpActive(POWERUP_SHROOM)) {
+		switch (type) {
+			case PMOD_SIZE: {
+//				AdjustSize();
+				mod *= 5.0f;
+				break;
+		}
+			case PMOD_VIEW: {
+				mod *= 5.0f;
+				break;
+			}
+		}
+	}
 
 	if ( PowerUpActive( POWERUP_QUADDAMAGE ) ) {
 		switch( type ) {
@@ -4301,7 +4322,7 @@ float idPlayer::PowerUpModifier( int type ) {
 	if ( PowerUpActive( POWERUP_HASTE ) ) {
 		switch ( type ) {
 			case PMOD_SPEED:	
-				mod *= 1.3f;
+				mod *= 5.0f; //1.3
 				break;
 
 			case PMOD_FIRERATE:
@@ -4310,7 +4331,7 @@ float idPlayer::PowerUpModifier( int type ) {
 		}
 	}
 
-	// Arena CTF powerups
+	// Arena CTF powerupsS
 	if( PowerUpActive( POWERUP_AMMOREGEN ) ) {
 		switch( type ) {
 			case PMOD_FIRERATE: {
@@ -4406,6 +4427,21 @@ void idPlayer::StartPowerUpEffect( int powerup ) {
 			PlayEffect( "fx_deadzone", animator.GetJointHandle( "origin" ), true );		
 			break;
 		}
+
+		//BIGBOY shroom
+		case POWERUP_SHROOM: {/*
+								 powerUpOverlay = regenerationOverlay;
+
+								 StopEffect("fx_quaddamage");
+								 PlayEffect("fx_regeneration", animator.GetJointHandle("chest"), true);
+
+								 // Spawn regen effect
+								 powerupEffect = gameLocal.GetEffect(spawnArgs, "fx_regeneration");
+								 powerupEffectTime = gameLocal.time;
+								 powerupEffectType = POWERUP_REGENERATION;*/
+								 break;
+		}
+
 		case POWERUP_QUADDAMAGE: {
 			powerUpOverlay = quadOverlay;
 
@@ -4686,6 +4722,13 @@ bool idPlayer::GivePowerUp( int powerup, int time, bool team ) {
 			break;
 		}
 		
+		//BIGBOY givepowerup mp
+		/*
+		case POWERUP_SHROOM: {
+			gameLocal.mpGame.ScheduleAnnouncerSound(AS_GENERAL_QUAD_DAMAGE, gameLocal.time, gameLocal.gameType == GAME_TOURNEY ? GetInstance() : -1);
+			break;
+		}*/
+
 		case POWERUP_QUADDAMAGE: {		
 			gameLocal.mpGame.ScheduleAnnouncerSound( AS_GENERAL_QUAD_DAMAGE, gameLocal.time, gameLocal.gameType == GAME_TOURNEY ? GetInstance() : -1 );
 			break;
@@ -8725,6 +8768,7 @@ void idPlayer::EvaluateControls( void ) {
 	oldFlags = usercmd.flags;
 
 	AdjustSpeed();
+	AdjustSize(); //adjusted
 
 	// update the viewangles
 	UpdateViewAngles();
@@ -8752,13 +8796,31 @@ void idPlayer::AdjustSpeed( void ) {
 		bobFrac = 0.0f;
 	}
 
-	speed *= PowerUpModifier(PMOD_SPEED);
+	speed *= PowerUpModifier(PMOD_SPEED); //???
 
 	if ( influenceActive == INFLUENCE_LEVEL3 ) {
 		speed *= 0.33f;
 	}
 
 	physicsObj.SetSpeed( speed, pm_crouchspeed.GetFloat() );
+}
+
+/*
+==============
+BIGBOY::AdjustSize
+==============
+*/
+void idPlayer::AdjustSize(void) {
+	float height;
+	float viewheight;
+
+	height = pm_normalheight.GetFloat(); //normal height is obtained
+	viewheight = pm_normalviewheight.GetFloat(); //normal viewheight is obtained
+
+	height *= PowerUpModifier(PMOD_SIZE);
+	viewheight *= PowerUpModifier(PMOD_VIEW);
+
+	physicsObj.SetHeight(height, viewheight);
 }
 
 /*
@@ -8783,6 +8845,7 @@ void idPlayer::AdjustBodyAngles( void ) {
 	blend = true;
 
 	if ( !physicsObj.HasGroundContacts() ) {
+		AdjustSize();
 		idealLegsYaw = 0.0f;
 		legsForward = true;
 	} else if ( usercmd.forwardmove < 0 ) {
@@ -11840,6 +11903,7 @@ void idPlayer::LocalClientPredictionThink( void ) {
 	}
 
 	AdjustSpeed();
+	AdjustSize(); //adjusted
 
 	UpdateViewAngles();
 
@@ -12023,6 +12087,7 @@ void idPlayer::NonLocalClientPredictionThink( void ) {
 #endif
 
 	AdjustSpeed();
+	AdjustSize(); //adjusted
 
 	UpdateViewAngles();
 

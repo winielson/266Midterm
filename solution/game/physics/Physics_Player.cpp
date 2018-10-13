@@ -96,6 +96,9 @@ float idPhysics_Player::CmdScale( const usercmd_t &cmd ) const {
 	total = idMath::Sqrt( (float) forwardmove * forwardmove + rightmove * rightmove + upmove * upmove );
 	scale = (float) playerSpeed * max / ( 127.0f * total );
 
+	//BIGBOY scale
+	//scale = (float) height * max / (127.0f * total);
+
 	return scale;
 }
 
@@ -1463,6 +1466,9 @@ void idPhysics_Player::MovePlayer( int msec ) {
 	// default speed
 	playerSpeed = walkSpeed;
 
+	//BIGBOY default height
+//	playerHeight = height;
+
 	// remove jumped and stepped up flag
 	current.movementFlags &= ~(PMF_JUMPED|PMF_STEPPED_UP|PMF_STEPPED_DOWN);
 	current.stepUp = 0.0f;
@@ -1664,6 +1670,11 @@ idPhysics_Player::idPhysics_Player( void ) {
 	clipMask = 0;
 	memset( &current, 0, sizeof( current ) );
 	saved = current;
+
+	//BIGBOY
+	height = pm_normalheight.GetFloat();
+	playerHeight = pm_normalheight.GetFloat();
+
 	walkSpeed = 0;
 	crouchSpeed = 0;
 	maxStepHeight = 0;
@@ -1737,6 +1748,9 @@ void idPhysics_Player::Save( idSaveGame *savefile ) const {
 	idPhysics_Player_SavePState( savefile, current );
 	idPhysics_Player_SavePState( savefile, saved );
 
+	//BIGBOY
+	savefile->WriteFloat(playerHeight);
+
 	savefile->WriteFloat( walkSpeed );
 	savefile->WriteFloat( crouchSpeed );
 	savefile->WriteFloat( maxStepHeight );
@@ -1773,6 +1787,9 @@ void idPhysics_Player::Restore( idRestoreGame *savefile ) {
 
 	idPhysics_Player_RestorePState( savefile, current );
 	idPhysics_Player_RestorePState( savefile, saved );
+	
+	//BIGBOY
+	savefile->ReadFloat(playerHeight);
 
 	savefile->ReadFloat( walkSpeed );
 	savefile->ReadFloat( crouchSpeed );
@@ -1809,6 +1826,16 @@ idPhysics_Player::SetPlayerInput
 void idPhysics_Player::SetPlayerInput( const usercmd_t &cmd, const idAngles &newViewAngles ) {
 	command = cmd;
 	viewAngles = newViewAngles;		// can't use cmd.angles cause of the delta_angles
+}
+
+/*
+== == == == == == == ==
+BIGBOY::SetHeight
+== == == == == == == ==
+*/
+void idPhysics_Player::SetHeight(const float newHeight, const float newViewHeight) {
+	playerHeight = newHeight;
+	viewHeight = newViewHeight;
 }
 
 /*

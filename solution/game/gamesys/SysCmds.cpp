@@ -477,6 +477,14 @@ void GiveStuffToPlayer( idPlayer* player, const char* name, const char* value )
 		}
 	}
 // RAVEN BEGIN
+	//BIGBOY
+	if (idStr::Icmp(name, "shroom") == 0) {
+		//char		*msg;
+		player->GivePowerUp(POWERUP_SHROOM, -1);
+			//msg = "shroom ON\n";
+		return;
+	}
+
 	if (idStr::Icmp(name, "quad") == 0) {
 		player->GivePowerUp( POWERUP_QUADDAMAGE, SEC2MS( 30.0f ) );
 		return;
@@ -516,6 +524,12 @@ void GiveStuffToPlayer( idPlayer* player, const char* name, const char* value )
 		player->GivePowerUp( POWERUP_GUARD, -1 );
 		return;
 	}
+
+	if (idStr::Icmp(name, "quad") == 0) {
+		player->GivePowerUp(POWERUP_QUADDAMAGE, SEC2MS(30.0f));
+		return;
+	}
+
 // RAVEN END
 
 	if ( !idStr::Icmp ( name, "wpmod_all" ) ) {
