@@ -905,6 +905,10 @@ bool idInventory::Give( idPlayer *owner, const idDict &spawnArgs, const char *st
 
 	} else if (!idStr::Icmp(statname, "shroom") && !checkOnly) {
 		GivePowerUp(owner, POWERUP_SHROOM, -1); //BIGBOY no sec2ms
+	} else if (!idStr::Icmp(statname, "small") && !checkOnly) {
+		GivePowerUp(owner, POWERUP_SMALL, -1); //BIGBOY no sec2ms
+	} else if (!idStr::Icmp(statname, "norm") && !checkOnly) {
+		GivePowerUp(owner, POWERUP_NORM, -1); //BIGBOY no sec2ms
 	} else if ( !idStr::Icmp( statname, "quad" ) && !checkOnly ) {
 		GivePowerUp( owner, POWERUP_QUADDAMAGE, SEC2MS( atof( value ) ) );
 	} else if ( !idStr::Icmp( statname, "regen" ) && !checkOnly ) {
@@ -1602,6 +1606,7 @@ void idPlayer::Init( void ) {
 
 	// start out standing
 	SetEyeHeight( pm_normalviewheight.GetFloat() );
+	//SetEyeHeight(1000.0);
 
 	stepUpTime = 0;
 	stepUpDelta = 0.0f;
@@ -2902,7 +2907,7 @@ void idPlayer::SpawnToPoint( const idVec3 &spawn_origin, const idAngles &spawn_a
 // RAVEN END
 	}
 
-	// don't allow full run speed for a bit
+	//BIGGEST don't allow full run speed for a bit
 	physicsObj.SetKnockBack( 100 );
 
 	// set our respawn time and buttons so that if we're killed we don't respawn immediately
@@ -4287,19 +4292,26 @@ float idPlayer::PowerUpModifier( int type ) {
 //	float p;
 
 	//BIGBOY s
-	//Shroom ENUMERATOR
+	//Shroom ENUMERATOR makes height and viewheight larger
 	if (PowerUpActive(POWERUP_SHROOM)) {
-		switch (type) {
-			case PMOD_SIZE: {
-//				AdjustSize();
-				mod *= 5.0f;
-				break;
-		}
-			case PMOD_VIEW: {
-				mod *= 5.0f;
-				break;
-			}
-		}
+		pm_normalheight.SetFloat(160);
+		pm_normalviewheight.SetFloat(150);
+		pm_crouchheight.SetFloat(77);
+		pm_crouchviewheight.SetFloat(68);
+	}
+
+	if (PowerUpActive(POWERUP_SMALL)) {
+		pm_normalheight.SetFloat(40);
+		pm_normalviewheight.SetFloat(35);
+		pm_crouchheight.SetFloat(15);
+		pm_crouchviewheight.SetFloat(10);
+	}
+
+	if (PowerUpActive(POWERUP_NORM)) {
+		pm_normalheight.SetFloat(77);
+		pm_normalviewheight.SetFloat(68);
+		pm_crouchheight.SetFloat(49);
+		pm_crouchviewheight.SetFloat(32);
 	}
 
 	if ( PowerUpActive( POWERUP_QUADDAMAGE ) ) {
@@ -4321,7 +4333,9 @@ float idPlayer::PowerUpModifier( int type ) {
 
 	if ( PowerUpActive( POWERUP_HASTE ) ) {
 		switch ( type ) {
-			case PMOD_SPEED:	
+			case PMOD_SPEED:
+				//pm_normalheight.SetFloat(160);
+				//pm_normalviewheight.SetFloat(150);
 				mod *= 5.0f; //1.3
 				break;
 
@@ -4569,6 +4583,7 @@ idPlayer::StopPowerUpEffect
 void idPlayer::StopPowerUpEffect( int powerup ) {
 	//if the player doesn't have quad, regen, haste or invisibility remaining on him, remove the power up overlay.
 	if( !( 
+		(inventory.powerups & (1 << POWERUP_SHROOM)) ||
 		(inventory.powerups & ( 1 << POWERUP_QUADDAMAGE ) ) || 
 		(inventory.powerups & ( 1 << POWERUP_REGENERATION ) ) || 
 		(inventory.powerups & ( 1 << POWERUP_HASTE ) ) || 
@@ -4580,6 +4595,14 @@ void idPlayer::StopPowerUpEffect( int powerup ) {
 		}
 
 	switch( powerup ) {
+		case POWERUP_SHROOM: {
+								 /*
+			pm_normalheight.SetFloat(77);
+			pm_normalviewheight.SetFloat(68);
+			pm_crouchheight.SetFloat(49);
+			pm_crouchviewheight.SetFloat(32);*/
+			break;
+		}
 		case POWERUP_QUADDAMAGE: {
 			powerupEffect = NULL;
 			powerupEffectTime = 0;
@@ -4819,6 +4842,7 @@ void idPlayer::ClearPowerup( int i ) {
 	//if the player doesn't have quad, regen, haste or invisibility remaining on him, remove the power up overlay.
 	if( !( 
 			(inventory.powerups & ( 1 << POWERUP_TEAM_DAMAGE_MOD ) ) ||
+			(inventory.powerups & (1 << POWERUP_SHROOM)) ||
 			(inventory.powerups & ( 1 << POWERUP_QUADDAMAGE ) ) || 
 			(inventory.powerups & ( 1 << POWERUP_REGENERATION ) ) || 
 			(inventory.powerups & ( 1 << POWERUP_HASTE ) ) || 
@@ -8108,7 +8132,8 @@ void idPlayer::SetClipModel( bool forceSpectatorBBox ) {
  		bounds = idBounds( vec3_origin ).Expand( pm_spectatebbox.GetFloat() * 0.5f );
 	} else {
 		bounds[0].Set( -pm_bboxwidth.GetFloat() * 0.5f, -pm_bboxwidth.GetFloat() * 0.5f, 0 );
-		bounds[1].Set( pm_bboxwidth.GetFloat() * 0.5f, pm_bboxwidth.GetFloat() * 0.5f, pm_normalheight.GetFloat() );
+		//bounds[1].Set(pm_bboxwidth.GetFloat() * 0.5f, pm_bboxwidth.GetFloat() * 0.5f, 500.0f);
+		bounds[1].Set(pm_bboxwidth.GetFloat() * 0.5f, pm_bboxwidth.GetFloat() * 0.5f, pm_normalheight.GetFloat());
 	}
 	// the origin of the clip model needs to be set before calling SetClipModel
 	// otherwise our physics object's current origin value gets reset to 0
@@ -8768,7 +8793,7 @@ void idPlayer::EvaluateControls( void ) {
 	oldFlags = usercmd.flags;
 
 	AdjustSpeed();
-	AdjustSize(); //adjusted
+	//AdjustSize(); //adjusted
 
 	// update the viewangles
 	UpdateViewAngles();
@@ -8781,6 +8806,8 @@ idPlayer::AdjustSpeed
 */
 void idPlayer::AdjustSpeed( void ) {
 	float speed;
+//	float height;
+//	float viewheight;
 
 	if ( spectating ) {
 		speed = pm_spectatespeed.GetFloat();
@@ -8797,12 +8824,20 @@ void idPlayer::AdjustSpeed( void ) {
 	}
 
 	speed *= PowerUpModifier(PMOD_SPEED); //???
+	//speed *= PowerUpModifier(PMOD_SIZE);
+
+	//height = pm_normalheight.GetFloat(); //normal height is obtained
+	//viewheight = pm_normalviewheight.GetFloat(); //normal viewheight is obtained
+
+	//height *= PowerUpModifier(PMOD_SIZE);
+	//viewheight *= PowerUpModifier(PMOD_VIEW);
 
 	if ( influenceActive == INFLUENCE_LEVEL3 ) {
 		speed *= 0.33f;
 	}
 
-	physicsObj.SetSpeed( speed, pm_crouchspeed.GetFloat() );
+	physicsObj.SetSpeed( speed, pm_crouchspeed.GetFloat() ); //BIGBOY TRACK THIS SHIT DOWN SO YOU KNOW HOW TO MAKE SIZE ADJUSTABLE
+	//physicsObj.SetHeight(height, viewheight);
 }
 
 /*
@@ -8814,11 +8849,26 @@ void idPlayer::AdjustSize(void) {
 	float height;
 	float viewheight;
 
+	bool inOtherInstance = gameLocal.isClient && gameLocal.GetLocalPlayer() && gameLocal.GetLocalPlayer()->GetInstance() != instance;
+
 	height = pm_normalheight.GetFloat(); //normal height is obtained
 	viewheight = pm_normalviewheight.GetFloat(); //normal viewheight is obtained
 
 	height *= PowerUpModifier(PMOD_SIZE);
 	viewheight *= PowerUpModifier(PMOD_VIEW);
+	
+	/*
+	SetClipModel(inOtherInstance);
+
+	if (inOtherInstance) {
+		// Normally idPlayer::Move() gets called to set the contents to 0, but we don't call
+		// move on players not in our snap, so we need to set it manually here.
+		physicsObj.SetContents(0);
+		physicsObj.SetMovementType(PM_SPECTATOR);
+		physicsObj.SetClipMask(MASK_DEADSOLID);*/
+
+	//height *= 5.0f;
+	//viewheight *= 5.0f;
 
 	physicsObj.SetHeight(height, viewheight);
 }
@@ -8845,7 +8895,7 @@ void idPlayer::AdjustBodyAngles( void ) {
 	blend = true;
 
 	if ( !physicsObj.HasGroundContacts() ) {
-		AdjustSize();
+		//AdjustSize();
 		idealLegsYaw = 0.0f;
 		legsForward = true;
 	} else if ( usercmd.forwardmove < 0 ) {
@@ -11903,7 +11953,7 @@ void idPlayer::LocalClientPredictionThink( void ) {
 	}
 
 	AdjustSpeed();
-	AdjustSize(); //adjusted
+//	AdjustSize(); //adjusted
 
 	UpdateViewAngles();
 
@@ -12087,7 +12137,7 @@ void idPlayer::NonLocalClientPredictionThink( void ) {
 #endif
 
 	AdjustSpeed();
-	AdjustSize(); //adjusted
+	//AdjustSize(); //adjusted
 
 	UpdateViewAngles();
 

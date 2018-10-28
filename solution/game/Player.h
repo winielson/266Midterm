@@ -127,6 +127,8 @@ enum {
 
 	//BIGBOY powerups
 	POWERUP_SHROOM,
+	POWERUP_SMALL,
+	POWERUP_NORM,
 		
 	// ctf powerups
 	POWERUP_CTF_MARINEFLAG,

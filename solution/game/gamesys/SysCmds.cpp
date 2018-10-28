@@ -479,9 +479,17 @@ void GiveStuffToPlayer( idPlayer* player, const char* name, const char* value )
 // RAVEN BEGIN
 	//BIGBOY
 	if (idStr::Icmp(name, "shroom") == 0) {
-		//char		*msg;
 		player->GivePowerUp(POWERUP_SHROOM, -1);
-			//msg = "shroom ON\n";
+		return;
+	}
+
+	if (idStr::Icmp(name, "small") == 0) {
+		player->GivePowerUp(POWERUP_SMALL, -1);
+		return;
+	}
+
+	if (idStr::Icmp(name, "norm") == 0) {
+		player->GivePowerUp(POWERUP_NORM,-1);
 		return;
 	}
 

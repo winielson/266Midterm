@@ -1467,7 +1467,7 @@ void idPhysics_Player::MovePlayer( int msec ) {
 	playerSpeed = walkSpeed;
 
 	//BIGBOY default height
-//	playerHeight = height;
+	playerHeight = height;
 
 	// remove jumped and stepped up flag
 	current.movementFlags &= ~(PMF_JUMPED|PMF_STEPPED_UP|PMF_STEPPED_DOWN);
@@ -1672,7 +1672,7 @@ idPhysics_Player::idPhysics_Player( void ) {
 	saved = current;
 
 	//BIGBOY
-	height = pm_normalheight.GetFloat();
+	//height = pm_normalheight.GetFloat();
 	playerHeight = pm_normalheight.GetFloat();
 
 	walkSpeed = 0;
@@ -1749,6 +1749,7 @@ void idPhysics_Player::Save( idSaveGame *savefile ) const {
 	idPhysics_Player_SavePState( savefile, saved );
 
 	//BIGBOY
+	savefile->WriteFloat(height);
 	savefile->WriteFloat(playerHeight);
 
 	savefile->WriteFloat( walkSpeed );
@@ -1789,6 +1790,7 @@ void idPhysics_Player::Restore( idRestoreGame *savefile ) {
 	idPhysics_Player_RestorePState( savefile, saved );
 	
 	//BIGBOY
+	savefile->ReadFloat(height);
 	savefile->ReadFloat(playerHeight);
 
 	savefile->ReadFloat( walkSpeed );

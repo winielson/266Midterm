@@ -147,6 +147,8 @@ private:
 	int						framemsec;
 	float					frametime;
 	float					playerSpeed;
+
+	//BIGBOY
 	float					playerHeight;
 	idVec3					viewForward;
 	idVec3					viewRight;
