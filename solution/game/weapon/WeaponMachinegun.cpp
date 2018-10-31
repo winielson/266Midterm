@@ -228,11 +228,17 @@ stateResult_t rvWeaponMachinegun::State_Fire ( const stateParms_t& parms ) {
 		case STAGE_INIT:
 			if ( wsfl.zoom ) {
 				nextAttackTime = gameLocal.time + (altFireRate * owner->PowerUpModifier ( PMOD_FIRERATE ));
-				Attack ( true, 3, spreadZoom, 0, 1.0f ); //Changed num_attacks from 1 to 3
+				Attack ( true, 1, spreadZoom, 0, 1.0f ); // BIGBOY
+				Attack(true, 1, spreadZoom, 0, 1.0f); //Shoots in burst of 3
+				Attack(true, 1, spreadZoom, 0, 1.0f);
 				fireHeld = true; //changed from true
 			} else {
-				nextAttackTime = gameLocal.time + (fireRate * owner->PowerUpModifier ( PMOD_FIRERATE ));
-				Attack ( false, 3, spread, 0, 1.0f ); //Changed num_attacks from 1 to 3
+				//nextAttackTime = gameLocal.time + (fireRate * owner->PowerUpModifier ( PMOD_FIRERATE ));
+				nextAttackTime = gameLocal.time + (fireRate * owner->PowerUpModifier(PMOD_FIRERATE)); // BIGBOY
+				Attack ( false, 1, spread, 0, 1.0f ); //Shoots in burst of 3
+				Attack(false, 1, spread, 0, 1.0f);
+				Attack(false, 1, spread, 0, 1.0f);
+				fireHeld = true;
 			}
 			PlayAnim ( ANIMCHANNEL_ALL, "fire", 0 );	
 			return SRESULT_STAGE ( STAGE_WAIT );
