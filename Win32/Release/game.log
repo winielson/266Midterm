@@ -1,18 +1,10 @@
-﻿Build started 10/28/2018 6:37:00 PM.
+﻿Build started 10/31/2018 2:53:50 PM.
      1>Project "C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Midterm\solution\game.vcxproj" on node 2 (Build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (../Win32/Release\) contains files shared from another project (idLib.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W4 /WX- /Ox /Ob1 /Oi /Oy- /D NDEBUG /D _WINDOWS /D _FINAL /D GAME_DLL /D Q4SDK /D _WINDLL /D _MBCS /GF /Gm- /EHsc /MT /GS- /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /GR /Yu /Fp"../Win32/Release\Game/Game.pch" /Fo"../Win32/Release\Game/" /Fd"../Win32/Release\Gamex86.pdb" /Gd /TP /analyze- /errorReport:prompt game\Player.cpp game\gamesys\SysCmds.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W4 /WX- /Ox /Ob1 /Oi /Oy- /D NDEBUG /D _WINDOWS /D _FINAL /D GAME_DLL /D Q4SDK /D _WINDLL /D _MBCS /GF /Gm- /EHsc /MT /GS- /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /GR /Yu /Fp"../Win32/Release\Game/Game.pch" /Fo"../Win32/Release\Game/" /Fd"../Win32/Release\Gamex86.pdb" /Gd /TP /analyze- /errorReport:prompt game\Player.cpp
          Player.cpp
-     1>game\Player.cpp(8852): warning C4189: 'inOtherInstance' : local variable is initialized but not referenced
-         SysCmds.cpp
-     1>game\gamesys\SysCmds.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
-                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
-     1>game\gamesys\SysCmds.cpp(836): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
-     1>game\gamesys\SysCmds.cpp(1702): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
-         Generating Code...
+     1>game\Player.cpp(8861): warning C4189: 'inOtherInstance' : local variable is initialized but not referenced
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1186,5): warning MSB8012: TargetPath(C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Midterm\solution\../Win32/Release\Game.dll) does not match the Linker's OutputFile property value (C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Midterm\Gamex86.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1188,5): warning MSB8012: TargetName(Game) does not match the Linker's OutputFile property value (Gamex86). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
        Link:
@@ -182,4 +174,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.08
+Time Elapsed 00:00:03.48

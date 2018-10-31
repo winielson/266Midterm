@@ -904,11 +904,11 @@ bool idInventory::Give( idPlayer *owner, const idDict &spawnArgs, const char *st
 		}
 
 	} else if (!idStr::Icmp(statname, "shroom") && !checkOnly) {
-		GivePowerUp(owner, POWERUP_SHROOM, -1); //BIGBOY no sec2ms
+		GivePowerUp(owner, POWERUP_SHROOM, SEC2MS(atof(value))); //BIGBOY no sec2ms
 	} else if (!idStr::Icmp(statname, "small") && !checkOnly) {
-		GivePowerUp(owner, POWERUP_SMALL, -1); //BIGBOY no sec2ms
+		GivePowerUp(owner, POWERUP_SMALL, SEC2MS(atof(value))); //BIGBOY no sec2ms
 	} else if (!idStr::Icmp(statname, "norm") && !checkOnly) {
-		GivePowerUp(owner, POWERUP_NORM, -1); //BIGBOY no sec2ms
+		GivePowerUp(owner, POWERUP_NORM, SEC2MS(atof(value))); //BIGBOY no sec2ms
 	} else if ( !idStr::Icmp( statname, "quad" ) && !checkOnly ) {
 		GivePowerUp( owner, POWERUP_QUADDAMAGE, SEC2MS( atof( value ) ) );
 	} else if ( !idStr::Icmp( statname, "regen" ) && !checkOnly ) {
@@ -4294,10 +4294,13 @@ float idPlayer::PowerUpModifier( int type ) {
 	//BIGBOY s
 	//Shroom ENUMERATOR makes height and viewheight larger
 	if (PowerUpActive(POWERUP_SHROOM)) {
-		pm_normalheight.SetFloat(160);
-		pm_normalviewheight.SetFloat(150);
+		pm_normalheight.SetFloat(154);
+		pm_normalviewheight.SetFloat(138);
 		pm_crouchheight.SetFloat(77);
 		pm_crouchviewheight.SetFloat(68);
+
+		pm_stepsize.SetFloat(32);
+		pm_jumpheight.SetFloat(10);
 	}
 
 	if (PowerUpActive(POWERUP_SMALL)) {
@@ -4305,6 +4308,9 @@ float idPlayer::PowerUpModifier( int type ) {
 		pm_normalviewheight.SetFloat(35);
 		pm_crouchheight.SetFloat(15);
 		pm_crouchviewheight.SetFloat(10);
+
+		pm_stepsize.SetFloat(8);
+		pm_jumpheight.SetFloat(108);
 	}
 
 	if (PowerUpActive(POWERUP_NORM)) {
@@ -4312,6 +4318,9 @@ float idPlayer::PowerUpModifier( int type ) {
 		pm_normalviewheight.SetFloat(68);
 		pm_crouchheight.SetFloat(49);
 		pm_crouchviewheight.SetFloat(32);
+
+		pm_stepsize.SetFloat(16);
+		pm_jumpheight.SetFloat(48);
 	}
 
 	if ( PowerUpActive( POWERUP_QUADDAMAGE ) ) {

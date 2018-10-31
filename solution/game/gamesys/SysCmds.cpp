@@ -479,17 +479,17 @@ void GiveStuffToPlayer( idPlayer* player, const char* name, const char* value )
 // RAVEN BEGIN
 	//BIGBOY
 	if (idStr::Icmp(name, "shroom") == 0) {
-		player->GivePowerUp(POWERUP_SHROOM, -1);
+		player->GivePowerUp(POWERUP_SHROOM, SEC2MS(1.0f));
 		return;
 	}
 
 	if (idStr::Icmp(name, "small") == 0) {
-		player->GivePowerUp(POWERUP_SMALL, -1);
+		player->GivePowerUp(POWERUP_SMALL, SEC2MS(1.0f));
 		return;
 	}
 
 	if (idStr::Icmp(name, "norm") == 0) {
-		player->GivePowerUp(POWERUP_NORM,-1);
+		player->GivePowerUp(POWERUP_NORM, SEC2MS(1.0f));
 		return;
 	}
 
