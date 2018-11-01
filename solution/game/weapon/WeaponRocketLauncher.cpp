@@ -146,6 +146,8 @@ void rvWeaponRocketLauncher::Think ( void ) {
 	// Let the real weapon think first
 	rvWeapon::Think ( );
 
+	//guideRange = 100.0f;
+
 	// IF no guide range is set then we dont have the mod yet	
 	if ( !guideRange ) {
 		return;

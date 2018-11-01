@@ -1,6 +1,6 @@
  Gamex86
 
- Timestamp is 5bda3bf7 (Wed Oct 31 19:34:15 2018)
+ Timestamp is 5bdb16f5 (Thu Nov 01 11:08:37 2018)
 
  Preferred load address is 20000000
 
@@ -9320,242 +9320,242 @@
  0001:00258430       ??1rvWeaponRocketLauncher@@UAE@XZ 20259430 f   WeaponRocketLauncher.obj
  0001:00258540       ?Spawn@rvWeaponRocketLauncher@@UAEXXZ 20259540 f   WeaponRocketLauncher.obj
  0001:00258870       ?Think@rvWeaponRocketLauncher@@UAEXXZ 20259870 f   WeaponRocketLauncher.obj
- 0001:00258db0       ?Save@rvWeaponRocketLauncher@@QBEXPAVidSaveGame@@@Z 20259db0 f   WeaponRocketLauncher.obj
- 0001:00258ec0       ?Restore@rvWeaponRocketLauncher@@QAEXPAVidRestoreGame@@@Z 20259ec0 f   WeaponRocketLauncher.obj
- 0001:00259190       ?PreSave@rvWeaponRocketLauncher@@UAEXXZ 2025a190 f   WeaponRocketLauncher.obj
- 0001:002591a0       ?PostSave@rvWeaponRocketLauncher@@UAEXXZ 2025a1a0 f   WeaponRocketLauncher.obj
- 0001:002591b0       ?OnLaunchProjectile@rvWeaponRocketLauncher@@MAEXPAVidProjectile@@@Z 2025a1b0 f   WeaponRocketLauncher.obj
- 0001:00259520       ?SetRocketState@rvWeaponRocketLauncher@@IAEXPBDH@Z 2025a520 f   WeaponRocketLauncher.obj
- 0001:00259540       ?State_Idle@rvWeaponRocketLauncher@@AAE?AW4stateResult_t@@ABUstateParms_t@@@Z 2025a540 f   WeaponRocketLauncher.obj
- 0001:00259600       ?State_Fire@rvWeaponRocketLauncher@@AAE?AW4stateResult_t@@ABUstateParms_t@@@Z 2025a600 f   WeaponRocketLauncher.obj
- 0001:00259730       ?State_Raise@rvWeaponRocketLauncher@@AAE?AW4stateResult_t@@ABUstateParms_t@@@Z 2025a730 f   WeaponRocketLauncher.obj
- 0001:002597c0       ?State_Lower@rvWeaponRocketLauncher@@AAE?AW4stateResult_t@@ABUstateParms_t@@@Z 2025a7c0 f   WeaponRocketLauncher.obj
- 0001:00259850       ?State_Rocket_Idle@rvWeaponRocketLauncher@@AAE?AW4stateResult_t@@ABUstateParms_t@@@Z 2025a850 f   WeaponRocketLauncher.obj
- 0001:00259990       ?State_Rocket_Reload@rvWeaponRocketLauncher@@AAE?AW4stateResult_t@@ABUstateParms_t@@@Z 2025a990 f   WeaponRocketLauncher.obj
- 0001:00259b40       ?Frame_AddToClip@rvWeaponRocketLauncher@@AAE?AW4stateResult_t@@ABUstateParms_t@@@Z 2025ab40 f   WeaponRocketLauncher.obj
- 0001:00259b50       ?Register_rvWeaponRocketLauncher@@YAXXZ 2025ab50 f   WeaponRocketLauncher.obj
- 0001:00259b60       ??_GrvWeaponRocketLauncher@@UAEPAXI@Z 2025ab60 f i WeaponRocketLauncher.obj
- 0001:00259b60       ??_ErvWeaponRocketLauncher@@UAEPAXI@Z 2025ab60 f i WeaponRocketLauncher.obj
- 0001:00259b90       ?RegisterClassA@rvWeaponShotgun@@SAXXZ 2025ab90 f   WeaponShotgun.obj
- 0001:00259c20       ?CreateInstance@rvWeaponShotgun@@SAPAVidClass@@XZ 2025ac20 f   WeaponShotgun.obj
- 0001:00259cc0       ?GetClassType@rvWeaponShotgun@@SAAAVidTypeInfo@@XZ 2025acc0 f   WeaponShotgun.obj
- 0001:00259cd0       ?GetType@rvWeaponShotgun@@UBEPAVidTypeInfo@@XZ 2025acd0 f   WeaponShotgun.obj
- 0001:00259ce0       ??0rvWeaponShotgun@@QAE@XZ 2025ace0 f   WeaponShotgun.obj
- 0001:00259d00       ?Spawn@rvWeaponShotgun@@UAEXXZ 2025ad00 f   WeaponShotgun.obj
- 0001:00259d60       ?Save@rvWeaponShotgun@@QBEXPAVidSaveGame@@@Z 2025ad60 f   WeaponShotgun.obj
- 0001:00259d70       ?Restore@rvWeaponShotgun@@QAEXPAVidRestoreGame@@@Z 2025ad70 f   WeaponShotgun.obj
- 0001:00259dc0       ?PreSave@rvWeaponShotgun@@UAEXXZ 2025adc0 f   WeaponShotgun.obj
- 0001:00259dd0       ?PostSave@rvWeaponShotgun@@UAEXXZ 2025add0 f   WeaponShotgun.obj
- 0001:00259de0       ?State_Idle@rvWeaponShotgun@@AAE?AW4stateResult_t@@ABUstateParms_t@@@Z 2025ade0 f   WeaponShotgun.obj
- 0001:00259f40       ?State_Fire@rvWeaponShotgun@@AAE?AW4stateResult_t@@ABUstateParms_t@@@Z 2025af40 f   WeaponShotgun.obj
- 0001:0025a0d0       ?State_Reload@rvWeaponShotgun@@AAE?AW4stateResult_t@@ABUstateParms_t@@@Z 2025b0d0 f   WeaponShotgun.obj
- 0001:0025a310       ?Register_rvWeaponShotgun@@YAXXZ 2025b310 f   WeaponShotgun.obj
- 0001:0025a320       ??0riBuyingManager@@QAE@XZ 2025b320 f   Buying.obj
- 0001:0025a340       ??1riBuyingManager@@QAE@XZ 2025b340 f   Buying.obj
- 0001:0025a350       ?GetIntValueForKey@riBuyingManager@@QAEHPBDH@Z 2025b350 f   Buying.obj
- 0001:0025a3f0       ?GetOpponentKillCashAward@riBuyingManager@@QAEHXZ 2025b3f0 f   Buying.obj
- 0001:0025a510       ?RegisterClassA@rvCTF_AssaultPoint@@SAXXZ 2025b510 f   CTF.obj
- 0001:0025a5a0       ?CreateInstance@rvCTF_AssaultPoint@@SAPAVidClass@@XZ 2025b5a0 f   CTF.obj
- 0001:0025a640       ?GetClassType@rvCTF_AssaultPoint@@SAAAVidTypeInfo@@XZ 2025b640 f   CTF.obj
- 0001:0025a650       ?GetType@rvCTF_AssaultPoint@@UBEPAVidTypeInfo@@XZ 2025b650 f   CTF.obj
- 0001:0025a660       ?Spawn@rvCTF_AssaultPoint@@QAEXXZ 2025b660 f   CTF.obj
- 0001:0025a670       ??0rvCTF_AssaultPoint@@QAE@XZ 2025b670 f   CTF.obj
- 0001:0025a6c0       ??1rvCTF_AssaultPoint@@UAE@XZ 2025b6c0 f   CTF.obj
- 0001:0025a750       ?SetOwnerColor@rvCTF_AssaultPoint@@QAEXXZ 2025b750 f   CTF.obj
- 0001:0025a7a0       ?SetOwner@rvCTF_AssaultPoint@@QAEXH@Z 2025b7a0 f   CTF.obj
- 0001:0025a7c0       ?Reset@rvCTF_AssaultPoint@@QAEXXZ 2025b7c0 f   CTF.obj
- 0001:0025a7d0       ?Event_Touch@rvCTF_AssaultPoint@@AAEXPAVidEntity@@PAUtrace_t@@@Z 2025b7d0 f   CTF.obj
- 0001:0025abf0       ?Event_InitializeLinks@rvCTF_AssaultPoint@@AAEXXZ 2025bbf0 f   CTF.obj
- 0001:0025ae10       ?ResetSpawns@rvCTF_AssaultPoint@@AAEXH@Z 2025be10 f   CTF.obj
- 0001:0025af00       ?ResetIndices@rvCTF_AssaultPoint@@AAEXXZ 2025bf00 f   CTF.obj
- 0001:0025b6b0       ?RegisterClassA@rvCTFAssaultPlayerStart@@SAXXZ 2025c6b0 f   CTF.obj
- 0001:0025b740       ?CreateInstance@rvCTFAssaultPlayerStart@@SAPAVidClass@@XZ 2025c740 f   CTF.obj
- 0001:0025b7f0       ?GetClassType@rvCTFAssaultPlayerStart@@SAAAVidTypeInfo@@XZ 2025c7f0 f   CTF.obj
- 0001:0025b800       ?GetType@rvCTFAssaultPlayerStart@@UBEPAVidTypeInfo@@XZ 2025c800 f   CTF.obj
- 0001:0025b810       ?Spawn@rvCTFAssaultPlayerStart@@QAEXXZ 2025c810 f   CTF.obj
- 0001:0025b8b0       ?Event_Activate@rvCTFAssaultPlayerStart@@AAEXPAVidEntity@@@Z 2025c8b0 f   CTF.obj
- 0001:0025b910       ?Register_rvCTF_AssaultPoint@@YAXXZ 2025c910 f   CTF.obj
- 0001:0025b920       ?Register_rvCTFAssaultPlayerStart@@YAXXZ 2025c920 f   CTF.obj
- 0001:0025b930       ??_ErvCTF_AssaultPoint@@UAEPAXI@Z 2025c930 f i CTF.obj
- 0001:0025b930       ??_GrvCTF_AssaultPoint@@UAEPAXI@Z 2025c930 f i CTF.obj
- 0001:0025b960       ??0rvGameState@@QAE@_N@Z   2025c960 f   GameState.obj
- 0001:0025ba00       ??1rvGameState@@UAE@XZ     2025ca00 f   GameState.obj
- 0001:0025ba30       ?SendState@rvGameState@@UAEXH@Z 2025ca30 f   GameState.obj
- 0001:0025bac0       ?ReceiveState@rvGameState@@UAEXABVidBitMsg@@@Z 2025cac0 f   GameState.obj
- 0001:0025baf0       ?SendInitialState@rvGameState@@UAEXH@Z 2025caf0 f   GameState.obj
- 0001:0025bb60       ?PackState@rvGameState@@UAEXAAVidBitMsg@@@Z 2025cb60 f   GameState.obj
- 0001:0025bba0       ?WriteState@rvGameState@@UAEXAAVidBitMsg@@@Z 2025cba0 f   GameState.obj
- 0001:0025bbb0       ?UnpackState@rvGameState@@UAEXABVidBitMsg@@@Z 2025cbb0 f   GameState.obj
- 0001:0025bbf0       ?GameStateChanged@rvGameState@@UAEXXZ 2025cbf0 f   GameState.obj
- 0001:0025bef0       ?Run@rvGameState@@UAEXXZ   2025cef0 f   GameState.obj
- 0001:0025c140       ?NewState@rvGameState@@UAEXW4mpGameState_t@@@Z 2025d140 f   GameState.obj
- 0001:0025c980       ?ClientDisconnect@rvGameState@@UAEXPAVidPlayer@@@Z 2025d980 f   GameState.obj
- 0001:0025c990       ?Spectate@rvGameState@@UAEXPAVidPlayer@@@Z 2025d990 f   GameState.obj
- 0001:0025c9d0       ?Clear@rvGameState@@UAEXXZ 2025d9d0 f   GameState.obj
- 0001:0025c9f0       ?IsType@rvGameState@@UBE_NW4gameStateType_t@@@Z 2025d9f0 f   GameState.obj
- 0001:0025ca10       ?GetClassType@rvGameState@@SA?AW4gameStateType_t@@XZ 2025da10 f   GameState.obj
- 0001:0025ca20       ??8rvGameState@@QBE_NABV0@@Z 2025da20 f   GameState.obj
- 0001:0025ca50       ??9rvGameState@@QBE_NABV0@@Z 2025da50 f   GameState.obj
- 0001:0025ca80       ??4rvGameState@@QAEAAV0@ABV0@@Z 2025da80 f   GameState.obj
- 0001:0025caa0       ?WriteNetworkInfo@rvGameState@@QAEXPAVidFile@@H@Z 2025daa0 f   GameState.obj
- 0001:0025cb10       ?ReadNetworkInfo@rvGameState@@QAEXPAVidFile@@H@Z 2025db10 f   GameState.obj
- 0001:0025cb70       ?SpawnDeadZonePowerup@rvGameState@@QAEXXZ 2025db70 f   GameState.obj
- 0001:0025cc80       ??0rvDMGameState@@QAE@_N@Z 2025dc80 f   GameState.obj
- 0001:0025ccb0       ?Run@rvDMGameState@@UAEXXZ 2025dcb0 f   GameState.obj
- 0001:0025cf80       ?IsType@rvDMGameState@@UBE_NW4gameStateType_t@@@Z 2025df80 f   GameState.obj
- 0001:0025cfa0       ?GetClassType@rvDMGameState@@SA?AW4gameStateType_t@@XZ 2025dfa0 f   GameState.obj
- 0001:0025cfb0       ??0rvTeamDMGameState@@QAE@_N@Z 2025dfb0 f   GameState.obj
- 0001:0025cfe0       ?Run@rvTeamDMGameState@@UAEXXZ 2025dfe0 f   GameState.obj
- 0001:0025d270       ?IsType@rvTeamDMGameState@@UBE_NW4gameStateType_t@@@Z 2025e270 f   GameState.obj
- 0001:0025d290       ?GetClassType@rvTeamDMGameState@@SA?AW4gameStateType_t@@XZ 2025e290 f   GameState.obj
- 0001:0025d2a0       ??0rvCTFGameState@@QAE@_N@Z 2025e2a0 f   GameState.obj
- 0001:0025d350       ?Clear@rvCTFGameState@@UAEXXZ 2025e350 f   GameState.obj
- 0001:0025d3b0       ?SendState@rvCTFGameState@@UAEXH@Z 2025e3b0 f   GameState.obj
- 0001:0025d440       ?ReceiveState@rvCTFGameState@@UAEXABVidBitMsg@@@Z 2025e440 f   GameState.obj
- 0001:0025d480       ?SendInitialState@rvCTFGameState@@UAEXH@Z 2025e480 f   GameState.obj
- 0001:0025d4f0       ?PackState@rvCTFGameState@@UAEXAAVidBitMsg@@@Z 2025e4f0 f   GameState.obj
- 0001:0025d5a0       ?WriteState@rvCTFGameState@@UAEXAAVidBitMsg@@@Z 2025e5a0 f   GameState.obj
- 0001:0025d5c0       ?UnpackState@rvCTFGameState@@UAEXABVidBitMsg@@@Z 2025e5c0 f   GameState.obj
- 0001:0025d650       ?GameStateChanged@rvCTFGameState@@UAEXXZ 2025e650 f   GameState.obj
- 0001:0025da50       ?Run@rvCTFGameState@@UAEXXZ 2025ea50 f   GameState.obj
- 0001:0025dce0       ?SetFlagState@rvCTFGameState@@QAEXHW4flagState_t@@@Z 2025ece0 f   GameState.obj
- 0001:0025dd00       ?SetFlagCarrier@rvCTFGameState@@QAEXHH@Z 2025ed00 f   GameState.obj
- 0001:0025dd20       ??8rvCTFGameState@@QBE_NABV0@@Z 2025ed20 f   GameState.obj
- 0001:0025dd90       ??4rvCTFGameState@@QAEAAV0@ABV0@@Z 2025ed90 f   GameState.obj
- 0001:0025dde0       ?IsType@rvCTFGameState@@UBE_NW4gameStateType_t@@@Z 2025ede0 f   GameState.obj
- 0001:0025de00       ?GetClassType@rvCTFGameState@@SA?AW4gameStateType_t@@XZ 2025ee00 f   GameState.obj
- 0001:0025de10       ??0rvTourneyGameState@@QAE@_N@Z 2025ee10 f   GameState.obj
- 0001:0025dee0       ?Clear@rvTourneyGameState@@UAEXXZ 2025eee0 f   GameState.obj
- 0001:0025e0f0       ?Run@rvTourneyGameState@@UAEXXZ 2025f0f0 f   GameState.obj
- 0001:0025ebb0       ?Reset@rvTourneyGameState@@UAEXXZ 2025fbb0 f   GameState.obj
- 0001:0025eda0       ?SendState@rvTourneyGameState@@UAEXH@Z 2025fda0 f   GameState.obj
- 0001:0025ee50       ?ReceiveState@rvTourneyGameState@@UAEXABVidBitMsg@@@Z 2025fe50 f   GameState.obj
- 0001:0025ee90       ?SendInitialState@rvTourneyGameState@@UAEXH@Z 2025fe90 f   GameState.obj
- 0001:0025ef10       ?PackState@rvTourneyGameState@@UAEXAAVidBitMsg@@@Z 2025ff10 f   GameState.obj
- 0001:0025f1e0       ?WriteState@rvTourneyGameState@@UAEXAAVidBitMsg@@@Z 202601e0 f   GameState.obj
- 0001:0025f200       ?UnpackState@rvTourneyGameState@@UAEXABVidBitMsg@@@Z 20260200 f   GameState.obj
- 0001:0025f440       ?GameStateChanged@rvTourneyGameState@@UAEXXZ 20260440 f   GameState.obj
- 0001:0025f9c0       ?NewState@rvTourneyGameState@@UAEXW4mpGameState_t@@@Z 202609c0 f   GameState.obj
- 0001:0025fa20       ?ClientDisconnect@rvTourneyGameState@@UAEXPAVidPlayer@@@Z 20260a20 f   GameState.obj
- 0001:0025fce0       ?Spectate@rvTourneyGameState@@UAEXPAVidPlayer@@@Z 20260ce0 f   GameState.obj
- 0001:0025fd10       ?RemovePlayer@rvTourneyGameState@@QAEXPAVidPlayer@@@Z 20260d10 f   GameState.obj
- 0001:0025ff70       ??8rvTourneyGameState@@QBE_NABV0@@Z 20260f70 f   GameState.obj
- 0001:00260010       ??4rvTourneyGameState@@QAEAAV0@ABV0@@Z 20261010 f   GameState.obj
- 0001:00260270       ?GetNumArenas@rvTourneyGameState@@QBEHXZ 20261270 f   GameState.obj
- 0001:002602b0       ?HasBye@rvTourneyGameState@@QAE_NPAVidPlayer@@@Z 202612b0 f   GameState.obj
- 0001:00260300       ?GetNextActiveArena@rvTourneyGameState@@QAEHH@Z 20261300 f   GameState.obj
- 0001:00260390       ?GetPrevActiveArena@rvTourneyGameState@@QAEHH@Z 20261390 f   GameState.obj
- 0001:00260420       ?SpectateCycleNext@rvTourneyGameState@@QAEXPAVidPlayer@@@Z 20261420 f   GameState.obj
- 0001:00260570       ?SpectateCyclePrev@rvTourneyGameState@@QAEXPAVidPlayer@@@Z 20261570 f   GameState.obj
- 0001:00260710       ?UpdateTourneyBrackets@rvTourneyGameState@@QAEXXZ 20261710 f   GameState.obj
- 0001:00260730       ?UpdateTourneyHistory@rvTourneyGameState@@QAEXH@Z 20261730 f   GameState.obj
- 0001:00260850       ?FirstAvailableArena@rvTourneyGameState@@QAEHXZ 20261850 f   GameState.obj
- 0001:00260880       ?GetArenaOutcome@rvTourneyGameState@@QAEPAUarenaOutcome_s@@H@Z 20261880 f   GameState.obj
- 0001:002608e0       ?IsType@rvTourneyGameState@@UBE_NW4gameStateType_t@@@Z 202618e0 f   GameState.obj
- 0001:00260900       ?GetClassType@rvTourneyGameState@@SA?AW4gameStateType_t@@XZ 20261900 f   GameState.obj
- 0001:00260910       ?SetupInitialBrackets@rvTourneyGameState@@AAEXXZ 20261910 f   GameState.obj
- 0001:00260dd0       ??0riDZGameState@@QAE@_N@Z 20261dd0 f   GameState.obj
- 0001:00260e80       ??1riDZGameState@@UAE@XZ   20261e80 f   GameState.obj
- 0001:00260ef0       ?Clear@riDZGameState@@UAEXXZ 20261ef0 f   GameState.obj
- 0001:00260f30       ?SendState@riDZGameState@@UAEXH@Z 20261f30 f   GameState.obj
- 0001:00260fc0       ?ReceiveState@riDZGameState@@UAEXABVidBitMsg@@@Z 20261fc0 f   GameState.obj
- 0001:00261000       ?SendInitialState@riDZGameState@@UAEXH@Z 20262000 f   GameState.obj
- 0001:00261070       ?PackState@riDZGameState@@UAEXAAVidBitMsg@@@Z 20262070 f   GameState.obj
- 0001:002610f0       ?WriteState@riDZGameState@@UAEXAAVidBitMsg@@@Z 202620f0 f   GameState.obj
- 0001:00261110       ?UnpackState@riDZGameState@@UAEXABVidBitMsg@@@Z 20262110 f   GameState.obj
- 0001:00261190       ?GameStateChanged@riDZGameState@@UAEXXZ 20262190 f   GameState.obj
- 0001:00261220       ?Run@riDZGameState@@UAEXXZ 20262220 f   GameState.obj
- 0001:002612f0       ?SetDZState@riDZGameState@@QAEXHW4dzState_t@@@Z 202622f0 f   GameState.obj
- 0001:00261310       ??8riDZGameState@@QBE_NABV0@@Z 20262310 f   GameState.obj
- 0001:00261360       ??4riDZGameState@@QAEAAV0@ABV0@@Z 20262360 f   GameState.obj
- 0001:00261390       ?ControlZoneStateChanged@riDZGameState@@AAEXH@Z 20262390 f   GameState.obj
- 0001:002613f0       ??1rvTourneyGameState@@UAE@XZ 202623f0 f i GameState.obj
- 0001:002613f0       ??1rvCTFGameState@@UAE@XZ  202623f0 f i GameState.obj
- 0001:00261400       ??_GriDZGameState@@UAEPAXI@Z 20262400 f i GameState.obj
- 0001:00261400       ??_EriDZGameState@@UAEPAXI@Z 20262400 f i GameState.obj
- 0001:00261450       ??_GrvGameState@@UAEPAXI@Z 20262450 f i GameState.obj
- 0001:00261450       ??_ErvGameState@@UAEPAXI@Z 20262450 f i GameState.obj
- 0001:00261450       ??_GrvTourneyGameState@@UAEPAXI@Z 20262450 f i GameState.obj
- 0001:00261450       ??_ErvCTFGameState@@UAEPAXI@Z 20262450 f i GameState.obj
- 0001:00261450       ??_GrvDMGameState@@UAEPAXI@Z 20262450 f i GameState.obj
- 0001:00261450       ??_GrvCTFGameState@@UAEPAXI@Z 20262450 f i GameState.obj
- 0001:00261450       ??_ErvTourneyGameState@@UAEPAXI@Z 20262450 f i GameState.obj
- 0001:00261450       ??_ErvTeamDMGameState@@UAEPAXI@Z 20262450 f i GameState.obj
- 0001:00261450       ??_ErvDMGameState@@UAEPAXI@Z 20262450 f i GameState.obj
- 0001:00261450       ??_GrvTeamDMGameState@@UAEPAXI@Z 20262450 f i GameState.obj
- 0001:002614a0       ??0rvTourneyArena@@QAE@XZ  202624a0 f   Tourney.obj
- 0001:002614d0       ?AddPlayers@rvTourneyArena@@QAEXPAVidPlayer@@0@Z 202624d0 f   Tourney.obj
- 0001:00261500       ?ClearPlayers@rvTourneyArena@@QAEXPAVidPlayer@@@Z 20262500 f   Tourney.obj
- 0001:00261540       ?Clear@rvTourneyArena@@QAEX_N@Z 20262540 f   Tourney.obj
- 0001:00261650       ?Ready@rvTourneyArena@@QAEXXZ 20262650 f   Tourney.obj
- 0001:002616c0       ?GetLeader@rvTourneyArena@@QAEPAVidPlayer@@XZ 202626c0 f   Tourney.obj
- 0001:00261710       ?GetLoser@rvTourneyArena@@QAEPAVidPlayer@@XZ 20262710 f   Tourney.obj
- 0001:00261730       ?UpdateState@rvTourneyArena@@QAEXXZ 20262730 f   Tourney.obj
- 0001:002619f0       ?NewState@rvTourneyArena@@QAEXW4arenaState_t@@@Z 202629f0 f   Tourney.obj
- 0001:00261b80       ?GetState@rvTourneyArena@@QBE?AW4arenaState_t@@XZ 20262b80 f   Tourney.obj
- 0001:00261b90       ?SetState@rvTourneyArena@@QAEXW4arenaState_t@@@Z 20262b90 f   Tourney.obj
- 0001:00261ba0       ?SetNextStateTime@rvTourneyArena@@QAEXH@Z 20262ba0 f   Tourney.obj
- 0001:00261bb0       ?GetNextStateTime@rvTourneyArena@@QAEHXZ 20262bb0 f   Tourney.obj
- 0001:00261bc0       ?PackState@rvTourneyArena@@QAEXAAVidBitMsg@@@Z 20262bc0 f   Tourney.obj
- 0001:00261c50       ?UnpackState@rvTourneyArena@@QAEXABVidBitMsg@@@Z 20262c50 f   Tourney.obj
- 0001:00261d10       ?RemovePlayer@rvTourneyArena@@QAEXPAVidPlayer@@@Z 20262d10 f   Tourney.obj
- 0001:00261d70       ?TimeLimitHit@rvTourneyArena@@QAE_NXZ 20262d70 f   Tourney.obj
- 0001:00261dc0       ?GetPlayerName@rvTourneyArena@@QAEPBDH@Z 20262dc0 f   Tourney.obj
- 0001:00261e00       ?GetPlayerScore@rvTourneyArena@@QAEHH@Z 20262e00 f   Tourney.obj
- 0001:00261e30       ??0rvTourneyGUI@@QAE@XZ    20262e30 f   Tourney.obj
- 0001:00261e40       ?SetupTourneyGUI@rvTourneyGUI@@QAEXPAVidUserInterface@@0@Z 20262e40 f   Tourney.obj
- 0001:00261e60       ?RoundStart@rvTourneyGUI@@QAEXXZ 20262e60 f   Tourney.obj
- 0001:00261f10       ?ArenaStart@rvTourneyGUI@@QAEXH@Z 20262f10 f   Tourney.obj
- 0001:00262300       ?ArenaDone@rvTourneyGUI@@QAEXH@Z 20263300 f   Tourney.obj
- 0001:002624a0       ?ArenaSelect@rvTourneyGUI@@QAEXHW4tourneyGUIHighlight_t@@@Z 202634a0 f   Tourney.obj
- 0001:002625c0       ?UpdateScores@rvTourneyGUI@@QAEXXZ 202635c0 f   Tourney.obj
- 0001:00262db0       ?PreTourney@rvTourneyGUI@@QAEXXZ 20263db0 f   Tourney.obj
- 0001:00262de0       ?TourneyStart@rvTourneyGUI@@QAEXXZ 20263de0 f   Tourney.obj
- 0001:00263120       ?SetupTourneyHistory@rvTourneyGUI@@QAEXHHQAY07UarenaOutcome_s@@@Z 20264120 f   Tourney.obj
- 0001:00263610       ?CanTalk@idMultiplayerGame@@QAE_NPAVidPlayer@@0_N@Z 20264610 f   VoiceComms.obj
- 0001:002636b0       ?ReceiveAndForwardVoiceData@idMultiplayerGame@@QAEXHABVidBitMsg@@H@Z 202646b0 f   VoiceComms.obj
- 0001:00263950       ?XmitVoiceData@idMultiplayerGame@@QAEXXZ 20264950 f   VoiceComms.obj
- 0001:00263a70       ?ReceiveAndPlayVoiceData@idMultiplayerGame@@QAEXABVidBitMsg@@@Z 20264a70 f   VoiceComms.obj
- 0001:00263b00       ??0rvStatHit@@IAE@HHHH_N@Z 20264b00 f   StatEvent.obj
- 0001:00263b80       ?RegisterInGame@rvStatHit@@MAEXPAVrvPlayerStat@@@Z 20264b80 f   StatEvent.obj
- 0001:00263cd0       ??0rvStatKill@@IAE@HHH_NH@Z 20264cd0 f   StatEvent.obj
- 0001:00263d50       ?RegisterInGame@rvStatKill@@MAEXPAVrvPlayerStat@@@Z 20264d50 f   StatEvent.obj
- 0001:00264420       ??0rvStatDeath@@IAE@HHH@Z  20265420 f   StatEvent.obj
- 0001:00264460       ?RegisterInGame@rvStatDeath@@MAEXPAVrvPlayerStat@@@Z 20265460 f   StatEvent.obj
- 0001:00264480       ??0rvStatDamageDealt@@IAE@HHHH@Z 20265480 f   StatEvent.obj
- 0001:002644d0       ?RegisterInGame@rvStatDamageDealt@@MAEXPAVrvPlayerStat@@@Z 202654d0 f   StatEvent.obj
- 0001:00264500       ??0rvStatDamageTaken@@IAE@HHHH@Z 20265500 f   StatEvent.obj
- 0001:00264550       ?RegisterInGame@rvStatDamageTaken@@MAEXPAVrvPlayerStat@@@Z 20265550 f   StatEvent.obj
- 0001:00264580       ??0rvStatFlagDrop@@IAE@HHHH@Z 20265580 f   StatEvent.obj
- 0001:002645b0       ??0rvStatFlagReturn@@IAE@HHH@Z 202655b0 f   StatEvent.obj
- 0001:002645e0       ??0rvStatFlagCapture@@IAE@HHHH@Z 202655e0 f   StatEvent.obj
- 0001:00264650       ?RegisterInGame@rvStatFlagCapture@@MAEXPAVrvPlayerStat@@@Z 20265650 f   StatEvent.obj
- 0001:00264700       ??1rvStat@@MAE@XZ          20265700 f i StatEvent.obj
- 0001:00264700       ??1rvStatTeam@@UAE@XZ      20265700 f i StatEvent.obj
- 0001:00264710       ??_ErvStat@@MAEPAXI@Z      20265710 f i StatEvent.obj
- 0001:00264710       ??_GrvStatKill@@UAEPAXI@Z  20265710 f i StatEvent.obj
- 0001:00264710       ??_GrvStatDeath@@UAEPAXI@Z 20265710 f i StatEvent.obj
- 0001:00264710       ??_GrvStatFlagReturn@@UAEPAXI@Z 20265710 f i StatEvent.obj
- 0001:00264710       ??_GrvStatFlagDrop@@UAEPAXI@Z 20265710 f i StatEvent.obj
- 0001:00264710       ??_ErvStatDeath@@UAEPAXI@Z 20265710 f i StatEvent.obj
- 0001:00264710       ??_ErvStatFlagCapture@@UAEPAXI@Z 20265710 f i StatEvent.obj
- 0001:00264710       ??_ErvStatEndGame@@UAEPAXI@Z 20265710 f i StatManager.obj
- 0001:00264710       ??_GrvStatHit@@UAEPAXI@Z   20265710 f i StatEvent.obj
- 0001:00264710       ??_GrvStatClientConnect@@UAEPAXI@Z 20265710 f i StatManager.obj
- 0001:00264710       ??_GrvStatFlagCapture@@UAEPAXI@Z 20265710 f i StatEvent.obj
- 0001:00264710       ??_ErvStatKill@@UAEPAXI@Z  20265710 f i StatEvent.obj
- 0001:00264710       ??_ErvStatHit@@UAEPAXI@Z   20265710 f i StatEvent.obj
- 0001:00264710       ??_ErvStatDamageDealt@@UAEPAXI@Z 20265710 f i StatEvent.obj
- 0001:00264710       ??_GrvStatDamageTaken@@UAEPAXI@Z 20265710 f i StatEvent.obj
- 0001:00264710       ??_ErvStatDamageTaken@@UAEPAXI@Z 20265710 f i StatEvent.obj
- 0001:00264710       ??_ErvStatFlagReturn@@UAEPAXI@Z 20265710 f i StatEvent.obj
- 0001:00264710       ??_ErvStatBeginGame@@UAEPAXI@Z 20265710 f i StatManager.obj
- 0001:00264710       ??_ErvStatClientConnect@@UAEPAXI@Z 20265710 f i StatManager.obj
- 0001:00264710       ??_ErvStatFlagDrop@@UAEPAXI@Z 20265710 f i StatEvent.obj
- 0001:00264710       ??_GrvStatDamageDealt@@UAEPAXI@Z 20265710 f i StatEvent.obj
- 0001:00264710       ??_GrvStatEndGame@@UAEPAXI@Z 20265710 f i StatManager.obj
- 0001:00264710       ??_GrvStat@@MAEPAXI@Z      20265710 f i StatEvent.obj
- 0001:00264710       ??_GrvStatBeginGame@@UAEPAXI@Z 20265710 f i StatManager.obj
+ 0001:00258da0       ?Save@rvWeaponRocketLauncher@@QBEXPAVidSaveGame@@@Z 20259da0 f   WeaponRocketLauncher.obj
+ 0001:00258eb0       ?Restore@rvWeaponRocketLauncher@@QAEXPAVidRestoreGame@@@Z 20259eb0 f   WeaponRocketLauncher.obj
+ 0001:00259180       ?PreSave@rvWeaponRocketLauncher@@UAEXXZ 2025a180 f   WeaponRocketLauncher.obj
+ 0001:00259190       ?PostSave@rvWeaponRocketLauncher@@UAEXXZ 2025a190 f   WeaponRocketLauncher.obj
+ 0001:002591a0       ?OnLaunchProjectile@rvWeaponRocketLauncher@@MAEXPAVidProjectile@@@Z 2025a1a0 f   WeaponRocketLauncher.obj
+ 0001:00259510       ?SetRocketState@rvWeaponRocketLauncher@@IAEXPBDH@Z 2025a510 f   WeaponRocketLauncher.obj
+ 0001:00259530       ?State_Idle@rvWeaponRocketLauncher@@AAE?AW4stateResult_t@@ABUstateParms_t@@@Z 2025a530 f   WeaponRocketLauncher.obj
+ 0001:002595f0       ?State_Fire@rvWeaponRocketLauncher@@AAE?AW4stateResult_t@@ABUstateParms_t@@@Z 2025a5f0 f   WeaponRocketLauncher.obj
+ 0001:00259720       ?State_Raise@rvWeaponRocketLauncher@@AAE?AW4stateResult_t@@ABUstateParms_t@@@Z 2025a720 f   WeaponRocketLauncher.obj
+ 0001:002597b0       ?State_Lower@rvWeaponRocketLauncher@@AAE?AW4stateResult_t@@ABUstateParms_t@@@Z 2025a7b0 f   WeaponRocketLauncher.obj
+ 0001:00259840       ?State_Rocket_Idle@rvWeaponRocketLauncher@@AAE?AW4stateResult_t@@ABUstateParms_t@@@Z 2025a840 f   WeaponRocketLauncher.obj
+ 0001:00259980       ?State_Rocket_Reload@rvWeaponRocketLauncher@@AAE?AW4stateResult_t@@ABUstateParms_t@@@Z 2025a980 f   WeaponRocketLauncher.obj
+ 0001:00259b30       ?Frame_AddToClip@rvWeaponRocketLauncher@@AAE?AW4stateResult_t@@ABUstateParms_t@@@Z 2025ab30 f   WeaponRocketLauncher.obj
+ 0001:00259b40       ?Register_rvWeaponRocketLauncher@@YAXXZ 2025ab40 f   WeaponRocketLauncher.obj
+ 0001:00259b50       ??_GrvWeaponRocketLauncher@@UAEPAXI@Z 2025ab50 f i WeaponRocketLauncher.obj
+ 0001:00259b50       ??_ErvWeaponRocketLauncher@@UAEPAXI@Z 2025ab50 f i WeaponRocketLauncher.obj
+ 0001:00259b80       ?RegisterClassA@rvWeaponShotgun@@SAXXZ 2025ab80 f   WeaponShotgun.obj
+ 0001:00259c10       ?CreateInstance@rvWeaponShotgun@@SAPAVidClass@@XZ 2025ac10 f   WeaponShotgun.obj
+ 0001:00259cb0       ?GetClassType@rvWeaponShotgun@@SAAAVidTypeInfo@@XZ 2025acb0 f   WeaponShotgun.obj
+ 0001:00259cc0       ?GetType@rvWeaponShotgun@@UBEPAVidTypeInfo@@XZ 2025acc0 f   WeaponShotgun.obj
+ 0001:00259cd0       ??0rvWeaponShotgun@@QAE@XZ 2025acd0 f   WeaponShotgun.obj
+ 0001:00259cf0       ?Spawn@rvWeaponShotgun@@UAEXXZ 2025acf0 f   WeaponShotgun.obj
+ 0001:00259d50       ?Save@rvWeaponShotgun@@QBEXPAVidSaveGame@@@Z 2025ad50 f   WeaponShotgun.obj
+ 0001:00259d60       ?Restore@rvWeaponShotgun@@QAEXPAVidRestoreGame@@@Z 2025ad60 f   WeaponShotgun.obj
+ 0001:00259db0       ?PreSave@rvWeaponShotgun@@UAEXXZ 2025adb0 f   WeaponShotgun.obj
+ 0001:00259dc0       ?PostSave@rvWeaponShotgun@@UAEXXZ 2025adc0 f   WeaponShotgun.obj
+ 0001:00259dd0       ?State_Idle@rvWeaponShotgun@@AAE?AW4stateResult_t@@ABUstateParms_t@@@Z 2025add0 f   WeaponShotgun.obj
+ 0001:00259f30       ?State_Fire@rvWeaponShotgun@@AAE?AW4stateResult_t@@ABUstateParms_t@@@Z 2025af30 f   WeaponShotgun.obj
+ 0001:0025a0c0       ?State_Reload@rvWeaponShotgun@@AAE?AW4stateResult_t@@ABUstateParms_t@@@Z 2025b0c0 f   WeaponShotgun.obj
+ 0001:0025a300       ?Register_rvWeaponShotgun@@YAXXZ 2025b300 f   WeaponShotgun.obj
+ 0001:0025a310       ??0riBuyingManager@@QAE@XZ 2025b310 f   Buying.obj
+ 0001:0025a330       ??1riBuyingManager@@QAE@XZ 2025b330 f   Buying.obj
+ 0001:0025a340       ?GetIntValueForKey@riBuyingManager@@QAEHPBDH@Z 2025b340 f   Buying.obj
+ 0001:0025a3e0       ?GetOpponentKillCashAward@riBuyingManager@@QAEHXZ 2025b3e0 f   Buying.obj
+ 0001:0025a500       ?RegisterClassA@rvCTF_AssaultPoint@@SAXXZ 2025b500 f   CTF.obj
+ 0001:0025a590       ?CreateInstance@rvCTF_AssaultPoint@@SAPAVidClass@@XZ 2025b590 f   CTF.obj
+ 0001:0025a630       ?GetClassType@rvCTF_AssaultPoint@@SAAAVidTypeInfo@@XZ 2025b630 f   CTF.obj
+ 0001:0025a640       ?GetType@rvCTF_AssaultPoint@@UBEPAVidTypeInfo@@XZ 2025b640 f   CTF.obj
+ 0001:0025a650       ?Spawn@rvCTF_AssaultPoint@@QAEXXZ 2025b650 f   CTF.obj
+ 0001:0025a660       ??0rvCTF_AssaultPoint@@QAE@XZ 2025b660 f   CTF.obj
+ 0001:0025a6b0       ??1rvCTF_AssaultPoint@@UAE@XZ 2025b6b0 f   CTF.obj
+ 0001:0025a740       ?SetOwnerColor@rvCTF_AssaultPoint@@QAEXXZ 2025b740 f   CTF.obj
+ 0001:0025a790       ?SetOwner@rvCTF_AssaultPoint@@QAEXH@Z 2025b790 f   CTF.obj
+ 0001:0025a7b0       ?Reset@rvCTF_AssaultPoint@@QAEXXZ 2025b7b0 f   CTF.obj
+ 0001:0025a7c0       ?Event_Touch@rvCTF_AssaultPoint@@AAEXPAVidEntity@@PAUtrace_t@@@Z 2025b7c0 f   CTF.obj
+ 0001:0025abe0       ?Event_InitializeLinks@rvCTF_AssaultPoint@@AAEXXZ 2025bbe0 f   CTF.obj
+ 0001:0025ae00       ?ResetSpawns@rvCTF_AssaultPoint@@AAEXH@Z 2025be00 f   CTF.obj
+ 0001:0025aef0       ?ResetIndices@rvCTF_AssaultPoint@@AAEXXZ 2025bef0 f   CTF.obj
+ 0001:0025b6a0       ?RegisterClassA@rvCTFAssaultPlayerStart@@SAXXZ 2025c6a0 f   CTF.obj
+ 0001:0025b730       ?CreateInstance@rvCTFAssaultPlayerStart@@SAPAVidClass@@XZ 2025c730 f   CTF.obj
+ 0001:0025b7e0       ?GetClassType@rvCTFAssaultPlayerStart@@SAAAVidTypeInfo@@XZ 2025c7e0 f   CTF.obj
+ 0001:0025b7f0       ?GetType@rvCTFAssaultPlayerStart@@UBEPAVidTypeInfo@@XZ 2025c7f0 f   CTF.obj
+ 0001:0025b800       ?Spawn@rvCTFAssaultPlayerStart@@QAEXXZ 2025c800 f   CTF.obj
+ 0001:0025b8a0       ?Event_Activate@rvCTFAssaultPlayerStart@@AAEXPAVidEntity@@@Z 2025c8a0 f   CTF.obj
+ 0001:0025b900       ?Register_rvCTF_AssaultPoint@@YAXXZ 2025c900 f   CTF.obj
+ 0001:0025b910       ?Register_rvCTFAssaultPlayerStart@@YAXXZ 2025c910 f   CTF.obj
+ 0001:0025b920       ??_ErvCTF_AssaultPoint@@UAEPAXI@Z 2025c920 f i CTF.obj
+ 0001:0025b920       ??_GrvCTF_AssaultPoint@@UAEPAXI@Z 2025c920 f i CTF.obj
+ 0001:0025b950       ??0rvGameState@@QAE@_N@Z   2025c950 f   GameState.obj
+ 0001:0025b9f0       ??1rvGameState@@UAE@XZ     2025c9f0 f   GameState.obj
+ 0001:0025ba20       ?SendState@rvGameState@@UAEXH@Z 2025ca20 f   GameState.obj
+ 0001:0025bab0       ?ReceiveState@rvGameState@@UAEXABVidBitMsg@@@Z 2025cab0 f   GameState.obj
+ 0001:0025bae0       ?SendInitialState@rvGameState@@UAEXH@Z 2025cae0 f   GameState.obj
+ 0001:0025bb50       ?PackState@rvGameState@@UAEXAAVidBitMsg@@@Z 2025cb50 f   GameState.obj
+ 0001:0025bb90       ?WriteState@rvGameState@@UAEXAAVidBitMsg@@@Z 2025cb90 f   GameState.obj
+ 0001:0025bba0       ?UnpackState@rvGameState@@UAEXABVidBitMsg@@@Z 2025cba0 f   GameState.obj
+ 0001:0025bbe0       ?GameStateChanged@rvGameState@@UAEXXZ 2025cbe0 f   GameState.obj
+ 0001:0025bee0       ?Run@rvGameState@@UAEXXZ   2025cee0 f   GameState.obj
+ 0001:0025c130       ?NewState@rvGameState@@UAEXW4mpGameState_t@@@Z 2025d130 f   GameState.obj
+ 0001:0025c970       ?ClientDisconnect@rvGameState@@UAEXPAVidPlayer@@@Z 2025d970 f   GameState.obj
+ 0001:0025c980       ?Spectate@rvGameState@@UAEXPAVidPlayer@@@Z 2025d980 f   GameState.obj
+ 0001:0025c9c0       ?Clear@rvGameState@@UAEXXZ 2025d9c0 f   GameState.obj
+ 0001:0025c9e0       ?IsType@rvGameState@@UBE_NW4gameStateType_t@@@Z 2025d9e0 f   GameState.obj
+ 0001:0025ca00       ?GetClassType@rvGameState@@SA?AW4gameStateType_t@@XZ 2025da00 f   GameState.obj
+ 0001:0025ca10       ??8rvGameState@@QBE_NABV0@@Z 2025da10 f   GameState.obj
+ 0001:0025ca40       ??9rvGameState@@QBE_NABV0@@Z 2025da40 f   GameState.obj
+ 0001:0025ca70       ??4rvGameState@@QAEAAV0@ABV0@@Z 2025da70 f   GameState.obj
+ 0001:0025ca90       ?WriteNetworkInfo@rvGameState@@QAEXPAVidFile@@H@Z 2025da90 f   GameState.obj
+ 0001:0025cb00       ?ReadNetworkInfo@rvGameState@@QAEXPAVidFile@@H@Z 2025db00 f   GameState.obj
+ 0001:0025cb60       ?SpawnDeadZonePowerup@rvGameState@@QAEXXZ 2025db60 f   GameState.obj
+ 0001:0025cc70       ??0rvDMGameState@@QAE@_N@Z 2025dc70 f   GameState.obj
+ 0001:0025cca0       ?Run@rvDMGameState@@UAEXXZ 2025dca0 f   GameState.obj
+ 0001:0025cf70       ?IsType@rvDMGameState@@UBE_NW4gameStateType_t@@@Z 2025df70 f   GameState.obj
+ 0001:0025cf90       ?GetClassType@rvDMGameState@@SA?AW4gameStateType_t@@XZ 2025df90 f   GameState.obj
+ 0001:0025cfa0       ??0rvTeamDMGameState@@QAE@_N@Z 2025dfa0 f   GameState.obj
+ 0001:0025cfd0       ?Run@rvTeamDMGameState@@UAEXXZ 2025dfd0 f   GameState.obj
+ 0001:0025d260       ?IsType@rvTeamDMGameState@@UBE_NW4gameStateType_t@@@Z 2025e260 f   GameState.obj
+ 0001:0025d280       ?GetClassType@rvTeamDMGameState@@SA?AW4gameStateType_t@@XZ 2025e280 f   GameState.obj
+ 0001:0025d290       ??0rvCTFGameState@@QAE@_N@Z 2025e290 f   GameState.obj
+ 0001:0025d340       ?Clear@rvCTFGameState@@UAEXXZ 2025e340 f   GameState.obj
+ 0001:0025d3a0       ?SendState@rvCTFGameState@@UAEXH@Z 2025e3a0 f   GameState.obj
+ 0001:0025d430       ?ReceiveState@rvCTFGameState@@UAEXABVidBitMsg@@@Z 2025e430 f   GameState.obj
+ 0001:0025d470       ?SendInitialState@rvCTFGameState@@UAEXH@Z 2025e470 f   GameState.obj
+ 0001:0025d4e0       ?PackState@rvCTFGameState@@UAEXAAVidBitMsg@@@Z 2025e4e0 f   GameState.obj
+ 0001:0025d590       ?WriteState@rvCTFGameState@@UAEXAAVidBitMsg@@@Z 2025e590 f   GameState.obj
+ 0001:0025d5b0       ?UnpackState@rvCTFGameState@@UAEXABVidBitMsg@@@Z 2025e5b0 f   GameState.obj
+ 0001:0025d640       ?GameStateChanged@rvCTFGameState@@UAEXXZ 2025e640 f   GameState.obj
+ 0001:0025da40       ?Run@rvCTFGameState@@UAEXXZ 2025ea40 f   GameState.obj
+ 0001:0025dcd0       ?SetFlagState@rvCTFGameState@@QAEXHW4flagState_t@@@Z 2025ecd0 f   GameState.obj
+ 0001:0025dcf0       ?SetFlagCarrier@rvCTFGameState@@QAEXHH@Z 2025ecf0 f   GameState.obj
+ 0001:0025dd10       ??8rvCTFGameState@@QBE_NABV0@@Z 2025ed10 f   GameState.obj
+ 0001:0025dd80       ??4rvCTFGameState@@QAEAAV0@ABV0@@Z 2025ed80 f   GameState.obj
+ 0001:0025ddd0       ?IsType@rvCTFGameState@@UBE_NW4gameStateType_t@@@Z 2025edd0 f   GameState.obj
+ 0001:0025ddf0       ?GetClassType@rvCTFGameState@@SA?AW4gameStateType_t@@XZ 2025edf0 f   GameState.obj
+ 0001:0025de00       ??0rvTourneyGameState@@QAE@_N@Z 2025ee00 f   GameState.obj
+ 0001:0025ded0       ?Clear@rvTourneyGameState@@UAEXXZ 2025eed0 f   GameState.obj
+ 0001:0025e0e0       ?Run@rvTourneyGameState@@UAEXXZ 2025f0e0 f   GameState.obj
+ 0001:0025eba0       ?Reset@rvTourneyGameState@@UAEXXZ 2025fba0 f   GameState.obj
+ 0001:0025ed90       ?SendState@rvTourneyGameState@@UAEXH@Z 2025fd90 f   GameState.obj
+ 0001:0025ee40       ?ReceiveState@rvTourneyGameState@@UAEXABVidBitMsg@@@Z 2025fe40 f   GameState.obj
+ 0001:0025ee80       ?SendInitialState@rvTourneyGameState@@UAEXH@Z 2025fe80 f   GameState.obj
+ 0001:0025ef00       ?PackState@rvTourneyGameState@@UAEXAAVidBitMsg@@@Z 2025ff00 f   GameState.obj
+ 0001:0025f1d0       ?WriteState@rvTourneyGameState@@UAEXAAVidBitMsg@@@Z 202601d0 f   GameState.obj
+ 0001:0025f1f0       ?UnpackState@rvTourneyGameState@@UAEXABVidBitMsg@@@Z 202601f0 f   GameState.obj
+ 0001:0025f430       ?GameStateChanged@rvTourneyGameState@@UAEXXZ 20260430 f   GameState.obj
+ 0001:0025f9b0       ?NewState@rvTourneyGameState@@UAEXW4mpGameState_t@@@Z 202609b0 f   GameState.obj
+ 0001:0025fa10       ?ClientDisconnect@rvTourneyGameState@@UAEXPAVidPlayer@@@Z 20260a10 f   GameState.obj
+ 0001:0025fcd0       ?Spectate@rvTourneyGameState@@UAEXPAVidPlayer@@@Z 20260cd0 f   GameState.obj
+ 0001:0025fd00       ?RemovePlayer@rvTourneyGameState@@QAEXPAVidPlayer@@@Z 20260d00 f   GameState.obj
+ 0001:0025ff60       ??8rvTourneyGameState@@QBE_NABV0@@Z 20260f60 f   GameState.obj
+ 0001:00260000       ??4rvTourneyGameState@@QAEAAV0@ABV0@@Z 20261000 f   GameState.obj
+ 0001:00260260       ?GetNumArenas@rvTourneyGameState@@QBEHXZ 20261260 f   GameState.obj
+ 0001:002602a0       ?HasBye@rvTourneyGameState@@QAE_NPAVidPlayer@@@Z 202612a0 f   GameState.obj
+ 0001:002602f0       ?GetNextActiveArena@rvTourneyGameState@@QAEHH@Z 202612f0 f   GameState.obj
+ 0001:00260380       ?GetPrevActiveArena@rvTourneyGameState@@QAEHH@Z 20261380 f   GameState.obj
+ 0001:00260410       ?SpectateCycleNext@rvTourneyGameState@@QAEXPAVidPlayer@@@Z 20261410 f   GameState.obj
+ 0001:00260560       ?SpectateCyclePrev@rvTourneyGameState@@QAEXPAVidPlayer@@@Z 20261560 f   GameState.obj
+ 0001:00260700       ?UpdateTourneyBrackets@rvTourneyGameState@@QAEXXZ 20261700 f   GameState.obj
+ 0001:00260720       ?UpdateTourneyHistory@rvTourneyGameState@@QAEXH@Z 20261720 f   GameState.obj
+ 0001:00260840       ?FirstAvailableArena@rvTourneyGameState@@QAEHXZ 20261840 f   GameState.obj
+ 0001:00260870       ?GetArenaOutcome@rvTourneyGameState@@QAEPAUarenaOutcome_s@@H@Z 20261870 f   GameState.obj
+ 0001:002608d0       ?IsType@rvTourneyGameState@@UBE_NW4gameStateType_t@@@Z 202618d0 f   GameState.obj
+ 0001:002608f0       ?GetClassType@rvTourneyGameState@@SA?AW4gameStateType_t@@XZ 202618f0 f   GameState.obj
+ 0001:00260900       ?SetupInitialBrackets@rvTourneyGameState@@AAEXXZ 20261900 f   GameState.obj
+ 0001:00260dc0       ??0riDZGameState@@QAE@_N@Z 20261dc0 f   GameState.obj
+ 0001:00260e70       ??1riDZGameState@@UAE@XZ   20261e70 f   GameState.obj
+ 0001:00260ee0       ?Clear@riDZGameState@@UAEXXZ 20261ee0 f   GameState.obj
+ 0001:00260f20       ?SendState@riDZGameState@@UAEXH@Z 20261f20 f   GameState.obj
+ 0001:00260fb0       ?ReceiveState@riDZGameState@@UAEXABVidBitMsg@@@Z 20261fb0 f   GameState.obj
+ 0001:00260ff0       ?SendInitialState@riDZGameState@@UAEXH@Z 20261ff0 f   GameState.obj
+ 0001:00261060       ?PackState@riDZGameState@@UAEXAAVidBitMsg@@@Z 20262060 f   GameState.obj
+ 0001:002610e0       ?WriteState@riDZGameState@@UAEXAAVidBitMsg@@@Z 202620e0 f   GameState.obj
+ 0001:00261100       ?UnpackState@riDZGameState@@UAEXABVidBitMsg@@@Z 20262100 f   GameState.obj
+ 0001:00261180       ?GameStateChanged@riDZGameState@@UAEXXZ 20262180 f   GameState.obj
+ 0001:00261210       ?Run@riDZGameState@@UAEXXZ 20262210 f   GameState.obj
+ 0001:002612e0       ?SetDZState@riDZGameState@@QAEXHW4dzState_t@@@Z 202622e0 f   GameState.obj
+ 0001:00261300       ??8riDZGameState@@QBE_NABV0@@Z 20262300 f   GameState.obj
+ 0001:00261350       ??4riDZGameState@@QAEAAV0@ABV0@@Z 20262350 f   GameState.obj
+ 0001:00261380       ?ControlZoneStateChanged@riDZGameState@@AAEXH@Z 20262380 f   GameState.obj
+ 0001:002613e0       ??1rvTourneyGameState@@UAE@XZ 202623e0 f i GameState.obj
+ 0001:002613e0       ??1rvCTFGameState@@UAE@XZ  202623e0 f i GameState.obj
+ 0001:002613f0       ??_GriDZGameState@@UAEPAXI@Z 202623f0 f i GameState.obj
+ 0001:002613f0       ??_EriDZGameState@@UAEPAXI@Z 202623f0 f i GameState.obj
+ 0001:00261440       ??_GrvGameState@@UAEPAXI@Z 20262440 f i GameState.obj
+ 0001:00261440       ??_ErvGameState@@UAEPAXI@Z 20262440 f i GameState.obj
+ 0001:00261440       ??_GrvTourneyGameState@@UAEPAXI@Z 20262440 f i GameState.obj
+ 0001:00261440       ??_ErvCTFGameState@@UAEPAXI@Z 20262440 f i GameState.obj
+ 0001:00261440       ??_GrvDMGameState@@UAEPAXI@Z 20262440 f i GameState.obj
+ 0001:00261440       ??_GrvCTFGameState@@UAEPAXI@Z 20262440 f i GameState.obj
+ 0001:00261440       ??_ErvTourneyGameState@@UAEPAXI@Z 20262440 f i GameState.obj
+ 0001:00261440       ??_ErvTeamDMGameState@@UAEPAXI@Z 20262440 f i GameState.obj
+ 0001:00261440       ??_ErvDMGameState@@UAEPAXI@Z 20262440 f i GameState.obj
+ 0001:00261440       ??_GrvTeamDMGameState@@UAEPAXI@Z 20262440 f i GameState.obj
+ 0001:00261490       ??0rvTourneyArena@@QAE@XZ  20262490 f   Tourney.obj
+ 0001:002614c0       ?AddPlayers@rvTourneyArena@@QAEXPAVidPlayer@@0@Z 202624c0 f   Tourney.obj
+ 0001:002614f0       ?ClearPlayers@rvTourneyArena@@QAEXPAVidPlayer@@@Z 202624f0 f   Tourney.obj
+ 0001:00261530       ?Clear@rvTourneyArena@@QAEX_N@Z 20262530 f   Tourney.obj
+ 0001:00261640       ?Ready@rvTourneyArena@@QAEXXZ 20262640 f   Tourney.obj
+ 0001:002616b0       ?GetLeader@rvTourneyArena@@QAEPAVidPlayer@@XZ 202626b0 f   Tourney.obj
+ 0001:00261700       ?GetLoser@rvTourneyArena@@QAEPAVidPlayer@@XZ 20262700 f   Tourney.obj
+ 0001:00261720       ?UpdateState@rvTourneyArena@@QAEXXZ 20262720 f   Tourney.obj
+ 0001:002619e0       ?NewState@rvTourneyArena@@QAEXW4arenaState_t@@@Z 202629e0 f   Tourney.obj
+ 0001:00261b70       ?GetState@rvTourneyArena@@QBE?AW4arenaState_t@@XZ 20262b70 f   Tourney.obj
+ 0001:00261b80       ?SetState@rvTourneyArena@@QAEXW4arenaState_t@@@Z 20262b80 f   Tourney.obj
+ 0001:00261b90       ?SetNextStateTime@rvTourneyArena@@QAEXH@Z 20262b90 f   Tourney.obj
+ 0001:00261ba0       ?GetNextStateTime@rvTourneyArena@@QAEHXZ 20262ba0 f   Tourney.obj
+ 0001:00261bb0       ?PackState@rvTourneyArena@@QAEXAAVidBitMsg@@@Z 20262bb0 f   Tourney.obj
+ 0001:00261c40       ?UnpackState@rvTourneyArena@@QAEXABVidBitMsg@@@Z 20262c40 f   Tourney.obj
+ 0001:00261d00       ?RemovePlayer@rvTourneyArena@@QAEXPAVidPlayer@@@Z 20262d00 f   Tourney.obj
+ 0001:00261d60       ?TimeLimitHit@rvTourneyArena@@QAE_NXZ 20262d60 f   Tourney.obj
+ 0001:00261db0       ?GetPlayerName@rvTourneyArena@@QAEPBDH@Z 20262db0 f   Tourney.obj
+ 0001:00261df0       ?GetPlayerScore@rvTourneyArena@@QAEHH@Z 20262df0 f   Tourney.obj
+ 0001:00261e20       ??0rvTourneyGUI@@QAE@XZ    20262e20 f   Tourney.obj
+ 0001:00261e30       ?SetupTourneyGUI@rvTourneyGUI@@QAEXPAVidUserInterface@@0@Z 20262e30 f   Tourney.obj
+ 0001:00261e50       ?RoundStart@rvTourneyGUI@@QAEXXZ 20262e50 f   Tourney.obj
+ 0001:00261f00       ?ArenaStart@rvTourneyGUI@@QAEXH@Z 20262f00 f   Tourney.obj
+ 0001:002622f0       ?ArenaDone@rvTourneyGUI@@QAEXH@Z 202632f0 f   Tourney.obj
+ 0001:00262490       ?ArenaSelect@rvTourneyGUI@@QAEXHW4tourneyGUIHighlight_t@@@Z 20263490 f   Tourney.obj
+ 0001:002625b0       ?UpdateScores@rvTourneyGUI@@QAEXXZ 202635b0 f   Tourney.obj
+ 0001:00262da0       ?PreTourney@rvTourneyGUI@@QAEXXZ 20263da0 f   Tourney.obj
+ 0001:00262dd0       ?TourneyStart@rvTourneyGUI@@QAEXXZ 20263dd0 f   Tourney.obj
+ 0001:00263110       ?SetupTourneyHistory@rvTourneyGUI@@QAEXHHQAY07UarenaOutcome_s@@@Z 20264110 f   Tourney.obj
+ 0001:00263600       ?CanTalk@idMultiplayerGame@@QAE_NPAVidPlayer@@0_N@Z 20264600 f   VoiceComms.obj
+ 0001:002636a0       ?ReceiveAndForwardVoiceData@idMultiplayerGame@@QAEXHABVidBitMsg@@H@Z 202646a0 f   VoiceComms.obj
+ 0001:00263940       ?XmitVoiceData@idMultiplayerGame@@QAEXXZ 20264940 f   VoiceComms.obj
+ 0001:00263a60       ?ReceiveAndPlayVoiceData@idMultiplayerGame@@QAEXABVidBitMsg@@@Z 20264a60 f   VoiceComms.obj
+ 0001:00263af0       ??0rvStatHit@@IAE@HHHH_N@Z 20264af0 f   StatEvent.obj
+ 0001:00263b70       ?RegisterInGame@rvStatHit@@MAEXPAVrvPlayerStat@@@Z 20264b70 f   StatEvent.obj
+ 0001:00263cc0       ??0rvStatKill@@IAE@HHH_NH@Z 20264cc0 f   StatEvent.obj
+ 0001:00263d40       ?RegisterInGame@rvStatKill@@MAEXPAVrvPlayerStat@@@Z 20264d40 f   StatEvent.obj
+ 0001:00264410       ??0rvStatDeath@@IAE@HHH@Z  20265410 f   StatEvent.obj
+ 0001:00264450       ?RegisterInGame@rvStatDeath@@MAEXPAVrvPlayerStat@@@Z 20265450 f   StatEvent.obj
+ 0001:00264470       ??0rvStatDamageDealt@@IAE@HHHH@Z 20265470 f   StatEvent.obj
+ 0001:002644c0       ?RegisterInGame@rvStatDamageDealt@@MAEXPAVrvPlayerStat@@@Z 202654c0 f   StatEvent.obj
+ 0001:002644f0       ??0rvStatDamageTaken@@IAE@HHHH@Z 202654f0 f   StatEvent.obj
+ 0001:00264540       ?RegisterInGame@rvStatDamageTaken@@MAEXPAVrvPlayerStat@@@Z 20265540 f   StatEvent.obj
+ 0001:00264570       ??0rvStatFlagDrop@@IAE@HHHH@Z 20265570 f   StatEvent.obj
+ 0001:002645a0       ??0rvStatFlagReturn@@IAE@HHH@Z 202655a0 f   StatEvent.obj
+ 0001:002645d0       ??0rvStatFlagCapture@@IAE@HHHH@Z 202655d0 f   StatEvent.obj
+ 0001:00264640       ?RegisterInGame@rvStatFlagCapture@@MAEXPAVrvPlayerStat@@@Z 20265640 f   StatEvent.obj
+ 0001:002646f0       ??1rvStat@@MAE@XZ          202656f0 f i StatEvent.obj
+ 0001:002646f0       ??1rvStatTeam@@UAE@XZ      202656f0 f i StatEvent.obj
+ 0001:00264700       ??_ErvStat@@MAEPAXI@Z      20265700 f i StatEvent.obj
+ 0001:00264700       ??_GrvStatKill@@UAEPAXI@Z  20265700 f i StatEvent.obj
+ 0001:00264700       ??_GrvStatDeath@@UAEPAXI@Z 20265700 f i StatEvent.obj
+ 0001:00264700       ??_GrvStatFlagReturn@@UAEPAXI@Z 20265700 f i StatEvent.obj
+ 0001:00264700       ??_GrvStatFlagDrop@@UAEPAXI@Z 20265700 f i StatEvent.obj
+ 0001:00264700       ??_ErvStatDeath@@UAEPAXI@Z 20265700 f i StatEvent.obj
+ 0001:00264700       ??_ErvStatFlagCapture@@UAEPAXI@Z 20265700 f i StatEvent.obj
+ 0001:00264700       ??_ErvStatEndGame@@UAEPAXI@Z 20265700 f i StatManager.obj
+ 0001:00264700       ??_GrvStatHit@@UAEPAXI@Z   20265700 f i StatEvent.obj
+ 0001:00264700       ??_GrvStatClientConnect@@UAEPAXI@Z 20265700 f i StatManager.obj
+ 0001:00264700       ??_GrvStatFlagCapture@@UAEPAXI@Z 20265700 f i StatEvent.obj
+ 0001:00264700       ??_ErvStatKill@@UAEPAXI@Z  20265700 f i StatEvent.obj
+ 0001:00264700       ??_ErvStatHit@@UAEPAXI@Z   20265700 f i StatEvent.obj
+ 0001:00264700       ??_ErvStatDamageDealt@@UAEPAXI@Z 20265700 f i StatEvent.obj
+ 0001:00264700       ??_GrvStatDamageTaken@@UAEPAXI@Z 20265700 f i StatEvent.obj
+ 0001:00264700       ??_ErvStatDamageTaken@@UAEPAXI@Z 20265700 f i StatEvent.obj
+ 0001:00264700       ??_ErvStatFlagReturn@@UAEPAXI@Z 20265700 f i StatEvent.obj
+ 0001:00264700       ??_ErvStatBeginGame@@UAEPAXI@Z 20265700 f i StatManager.obj
+ 0001:00264700       ??_ErvStatClientConnect@@UAEPAXI@Z 20265700 f i StatManager.obj
+ 0001:00264700       ??_ErvStatFlagDrop@@UAEPAXI@Z 20265700 f i StatEvent.obj
+ 0001:00264700       ??_GrvStatDamageDealt@@UAEPAXI@Z 20265700 f i StatEvent.obj
+ 0001:00264700       ??_GrvStatEndGame@@UAEPAXI@Z 20265700 f i StatManager.obj
+ 0001:00264700       ??_GrvStat@@MAEPAXI@Z      20265700 f i StatEvent.obj
+ 0001:00264700       ??_GrvStatBeginGame@@UAEPAXI@Z 20265700 f i StatManager.obj
  0001:00264780       ?GetBlock@rvStatAllocator@@IAEPAXIPAH@Z 20265780 f   StatManager.obj
  0001:00264810       ??0rvStatAllocator@@QAE@XZ 20265810 f   StatManager.obj
  0001:00264820       ?Report@rvStatAllocator@@QAEXXZ 20265820 f   StatManager.obj
@@ -25788,12 +25788,12 @@
  0001:00256fd7       __catch$?CreateInstance@WeaponNapalmGun@@SAPAVidClass@@XZ$0 20257fd7 f   WeaponNapalmGun.obj
  0001:00257d97       __catch$?CreateInstance@rvWeaponRailgun@@SAPAVidClass@@XZ$0 20258d97 f   WeaponRailgun.obj
  0001:00258367       __catch$?CreateInstance@rvWeaponRocketLauncher@@SAPAVidClass@@XZ$0 20259367 f   WeaponRocketLauncher.obj
- 0001:00259ca7       __catch$?CreateInstance@rvWeaponShotgun@@SAPAVidClass@@XZ$0 2025aca7 f   WeaponShotgun.obj
- 0001:0025a2e8       $LN37                      2025b2e8     WeaponShotgun.obj
- 0001:0025a627       __catch$?CreateInstance@rvCTF_AssaultPoint@@SAPAVidClass@@XZ$0 2025b627 f   CTF.obj
- 0001:0025b7cd       __catch$?CreateInstance@rvCTFAssaultPlayerStart@@SAPAVidClass@@XZ$0 2025c7cd f   CTF.obj
- 0001:0025c960       $LN364                     2025d960     GameState.obj
- 0001:0025f424       $LN70                      20260424     GameState.obj
+ 0001:00259c97       __catch$?CreateInstance@rvWeaponShotgun@@SAPAVidClass@@XZ$0 2025ac97 f   WeaponShotgun.obj
+ 0001:0025a2d8       $LN37                      2025b2d8     WeaponShotgun.obj
+ 0001:0025a617       __catch$?CreateInstance@rvCTF_AssaultPoint@@SAPAVidClass@@XZ$0 2025b617 f   CTF.obj
+ 0001:0025b7bd       __catch$?CreateInstance@rvCTFAssaultPlayerStart@@SAPAVidClass@@XZ$0 2025c7bd f   CTF.obj
+ 0001:0025c950       $LN364                     2025d950     GameState.obj
+ 0001:0025f414       $LN70                      20260414     GameState.obj
  0001:00264760       _localtime                 20265760 f   StatManager.obj
  0001:00264770       _time                      20265770 f   StatManager.obj
  0001:00269048       $LN23                      2026a048     StatManager.obj
