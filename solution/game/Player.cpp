@@ -4291,15 +4291,14 @@ float idPlayer::PowerUpModifier( int type ) {
 	float mod = 1.0f;
 //	float p;
 
-	//BIGBOY s
-	//Shroom ENUMERATOR makes height and viewheight larger
+	//BIGBOY powerupactive
 	if (PowerUpActive(POWERUP_SHROOM)) {
 		pm_normalheight.SetFloat(154);
 		pm_normalviewheight.SetFloat(138);
 		pm_crouchheight.SetFloat(77);
 		pm_crouchviewheight.SetFloat(68);
 
-		pm_stepsize.SetFloat(32);
+		pm_stepsize.SetFloat(1000);
 		pm_jumpheight.SetFloat(10);
 	}
 
@@ -9104,6 +9103,7 @@ void idPlayer::Move( void ) {
 	} else {
 		physicsObj.SetContents( CONTENTS_BODY | (use_combat_bbox?CONTENTS_SOLID:0) );
 		physicsObj.SetMovementType( PM_NORMAL );
+		//physicsObj.SetMovementType(PM_NOCLIP);
 	}
 
 	if ( spectating || ( gameLocal.isClient && gameLocal.GetLocalPlayer() && gameLocal.GetLocalPlayer()->GetInstance() != instance ) ) {
@@ -9185,6 +9185,14 @@ void idPlayer::Move( void ) {
  			}
  			physicsObj.SetLinearVelocity( vel );
  		}
+
+		//if (pfl.onGround == false && pfl.jump == false)
+		/*
+		if (pfl.jump == true)
+		{
+			//pfl.onGround == true;
+			physicsObj.SetMovementType(PM_NOCLIP);
+		}*/
 	}
 
 	if ( pfl.jump ) {
@@ -9244,6 +9252,7 @@ idPlayer::UpdateIntentDir
 void idPlayer::UpdateIntentDir ( void ) {
 	idVec3 newIntentDir;
 	idVec3 viewDir = viewAxis[0];
+	//viewDir.z = 0;
 	viewDir.z = 0;
 	viewDir.Normalize();
 	float prevBias = 199.0f;

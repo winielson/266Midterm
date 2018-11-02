@@ -77,6 +77,7 @@ float idPhysics_Player::CmdScale( const usercmd_t &cmd ) const {
 	// otherwise crouch speed will be lower than specified
 	if ( walking ) {
 		upmove = 0;
+		//upmove = 100; //BIGBOY upmove
 	} else { 
 		upmove = cmd.upmove;
 	}
@@ -783,6 +784,7 @@ void idPhysics_Player::WalkMove( void ) {
 	gameLocal.push.InitSavingPushedEntityPositions();
 
 	idPhysics_Player::SlideMove( false, true, true, !gameLocal.isMultiplayer );
+	//idPhysics_Player::SlideMove(true, true, true, !gameLocal.isMultiplayer);
 }
 
 /*
@@ -945,6 +947,7 @@ void idPhysics_Player::LadderMove( void ) {
 	// up down movement
 	if ( command.upmove ) {
 		wishvel += -0.5f * gravityNormal * scale * (float) command.upmove;
+		//wishvel = -100.0f * ladderNormal;
 	}
 
 	// do strafe friction
@@ -1458,6 +1461,7 @@ void idPhysics_Player::MovePlayer( int msec ) {
 	walking = false;
 	groundPlane = false;
 	ladder = false;
+	//ladder = true;
 
 	// determine the time
 	framemsec = msec;

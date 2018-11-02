@@ -1,49 +1,49 @@
-rvStateThread: altFire
-rvStateThread: altFire (1)
-rvStateThread: altFire
-rvStateThread: altFire (1)
-rvStateThread: altFire
-rvStateThread: altFire (1)
-rvStateThread: altFire
-rvStateThread: altFire (1)
-rvStateThread: altFire
-rvStateThread: altFire (1)
-rvStateThread: altFire
-rvStateThread: altFire (1)
-rvStateThread: altFire
-rvStateThread: altFire (1)
-rvStateThread: altFire
-rvStateThread: altFire (1)
-rvStateThread: altFire
-rvStateThread: altFire (1)
-rvStateThread: altFire
-rvStateThread: altFire (1)
-rvStateThread: altFire
-rvStateThread: altFire (1)
-rvStateThread: altFire
-rvStateThread: altFire (1)
-rvStateThread: altFire
-rvStateThread: altFire (1)
-rvStateThread: altFire
-rvStateThread: altFire (1)
-rvStateThread: altFire
-rvStateThread: altFire (1)
-rvStateThread: altFire
-rvStateThread: altFire (1)
-rvStateThread: altFire
-rvStateThread: altFire (1)
-rvStateThread: altFire
-rvStateThread: altFire (1)
-rvStateThread: altFire
-rvStateThread: altFire (1)
-rvStateThread: altFire
-rvStateThread: altFire (1)
-rvStateThread: altFire
-rvStateThread: altFire (1)
-rvStateThread: altFire
-rvStateThread: altFire (1)
-rvStateThread: altFire
-rvStateThread: altFire (1)
-rvStateThread: altFire
-rvStateThread: altFire (1)
-rvStateThread: altFire
+rvStateThread: Idle
+rvStateThread: Idle (1)
+rvStateThread: Idle
+rvStateThread: Idle (1)
+rvStateThread: Idle
+rvStateThread: Idle (1)
+rvStateThread: Idle
+rvStateThread: Idle (1)
+rvStateThread: Idle
+rvStateThread: Idle (1)
+rvStateThread: Idle
+rvStateThread: Idle (1)
+rvStateThread: Idle
+rvStateThread: Idle (1)
+rvStateThread: Idle
+rvStateThread: Idle (1)
+rvStateThread: Idle
+rvStateThread: Idle (1)
+rvStateThread: Idle
+rvStateThread: Idle (1)
+rvStateThread: Idle
+rvStateThread: Idle (1)
+rvStateThread: Idle
+rvStateThread: Idle (1)
+rvStateThread: Idle
+rvStateThread: Idle (1)
+rvStateThread: Idle
+rvStateThread: Idle (1)
+rvStateThread: Idle
+rvStateThread: Idle (1)
+rvStateThread: Idle
+rvStateThread: Idle (1)
+rvStateThread: Idle
+rvStateThread: Idle (1)
+rvStateThread: Idle
+rvStateThread: Idle (1)
+rvStateThread: Idle
+rvStateThread: Idle (1)
+rvStateThread: Idle
+rvStateThread: Idle (1)
+rvStateThread: Idle
+rvStateThread: Idle (1)
+rvStateThread: Idle
+rvStateThread: Idle (1)
+rvStateThread: Idle
+rvStateThread: Idle (1)
+rvStateThread: Idle
+rvStateThread: Idle (1)
+rvStateThread: Idle
