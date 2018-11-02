@@ -3,8 +3,10 @@
 
 #include "../Game_local.h"
 #include "../Weapon.h"
+#include "../Projectile.h"
 
 const int SHOTGUN_MOD_AMMO = BIT(0);
+const int HYPERBLASTER_SPARM_BATTERY = 6;
 
 class rvWeaponShotgun : public rvWeapon {
 public:
@@ -21,11 +23,13 @@ public:
 
 protected:
 	int						hitscans;
+	bool				fireHeld;
 
 private:
 
 	stateResult_t		State_Idle		( const stateParms_t& parms );
 	stateResult_t		State_Fire		( const stateParms_t& parms );
+	stateResult_t		State_altFire(const stateParms_t& parms);
 	stateResult_t		State_Reload	( const stateParms_t& parms );
 	
 	CLASS_STATES_PROTOTYPE( rvWeaponShotgun );
@@ -49,6 +53,7 @@ rvWeaponShotgun::Spawn
 */
 void rvWeaponShotgun::Spawn( void ) {
 	hitscans   = spawnArgs.GetFloat( "hitscans" );
+	bool				fireHeld;
 	
 	SetState( "Raise", 0 );	
 }
@@ -59,6 +64,7 @@ rvWeaponShotgun::Save
 ================
 */
 void rvWeaponShotgun::Save( idSaveGame *savefile ) const {
+	savefile->WriteBool(fireHeld);
 }
 
 /*
@@ -68,6 +74,7 @@ rvWeaponShotgun::Restore
 */
 void rvWeaponShotgun::Restore( idRestoreGame *savefile ) {
 	hitscans   = spawnArgs.GetFloat( "hitscans" );
+	savefile->ReadBool(fireHeld);
 }
 
 /*
@@ -98,6 +105,7 @@ void rvWeaponShotgun::PostSave ( void ) {
 CLASS_STATES_DECLARATION( rvWeaponShotgun )
 	STATE( "Idle",				rvWeaponShotgun::State_Idle)
 	STATE( "Fire",				rvWeaponShotgun::State_Fire )
+	STATE("altFire", rvWeaponShotgun::State_altFire)
 	STATE( "Reload",			rvWeaponShotgun::State_Reload )
 END_CLASS_STATES
 
@@ -126,17 +134,26 @@ stateResult_t rvWeaponShotgun::State_Idle( const stateParms_t& parms ) {
 			if ( wsfl.lowerWeapon ) {
 				SetState( "Lower", 4 );
 				return SRESULT_DONE;
-			}		
+			}
+			if (fireHeld && !wsfl.attack) {
+				fireHeld = false;
+			}
+
 			if ( !clipSize ) {
-				if ( gameLocal.time > nextAttackTime && wsfl.attack && AmmoAvailable ( ) ) {
+				if (!fireHeld && gameLocal.time > nextAttackTime && wsfl.attack && AmmoAvailable()) {
 					SetState( "Fire", 0 );
 					return SRESULT_DONE;
 				}  
 			} else {				
-				if ( gameLocal.time > nextAttackTime && wsfl.attack && AmmoInClip ( ) ) {
+				if (!fireHeld && gameLocal.time > nextAttackTime && wsfl.attack && AmmoInClip()) {
 					SetState( "Fire", 0 );
 					return SRESULT_DONE;
-				}  
+				}
+				else if (fireHeld && gameLocal.time > nextAttackTime && wsfl.attack && AmmoInClip()) {
+					SetState("altFire", 0);
+					return SRESULT_DONE;
+				}
+
 				if ( wsfl.attack && AutoReload() && !AmmoInClip ( ) && AmmoAvailable () ) {
 					SetState( "Reload", 4 );
 					return SRESULT_DONE;			
@@ -165,6 +182,7 @@ stateResult_t rvWeaponShotgun::State_Fire( const stateParms_t& parms ) {
 		case STAGE_INIT:
 			nextAttackTime = gameLocal.time + (fireRate * owner->PowerUpModifier ( PMOD_FIRERATE ));
 			Attack( false, hitscans, spread, 0, 1.0f );
+			fireHeld = true;
 			PlayAnim( ANIMCHANNEL_ALL, "fire", 0 );	
 			return SRESULT_STAGE( STAGE_WAIT );
 	
@@ -173,8 +191,12 @@ stateResult_t rvWeaponShotgun::State_Fire( const stateParms_t& parms ) {
 				SetState( "Idle", 0 );
 				return SRESULT_DONE;
 			}									
-			if ( wsfl.attack && gameLocal.time >= nextAttackTime && AmmoInClip() ) {
+			if (!fireHeld && wsfl.attack && gameLocal.time >= nextAttackTime && AmmoInClip()) {
 				SetState( "Fire", 0 );
+				return SRESULT_DONE;
+			}
+			if (fireHeld && wsfl.attack && gameLocal.time >= nextAttackTime && AmmoInClip() && !wsfl.lowerWeapon) {
+				SetState("altFire", 0);
 				return SRESULT_DONE;
 			}
 			if ( clipSize ) {
@@ -186,6 +208,52 @@ stateResult_t rvWeaponShotgun::State_Fire( const stateParms_t& parms ) {
 			return SRESULT_WAIT;
 	}
 	return SRESULT_ERROR;
+}
+
+/*
+================
+rvWeaponShotgun::State_altFire
+================
+*/
+stateResult_t rvWeaponShotgun::State_altFire(const stateParms_t& parms) {
+	enum {
+		STAGE_INIT,
+		STAGE_WAIT,
+	};
+	switch (parms.stage) {
+	case STAGE_INIT:
+		//nextAttackTime = gameLocal.time + (fireRate * owner->PowerUpModifier(PMOD_FIRERATE));
+		nextAttackTime = gameLocal.time + (fireRate * owner->PowerUpModifier(PMOD_FIRERATE));
+		Attack(true, 10, 4, 0, 1.0f);
+		PlayAnim(ANIMCHANNEL_ALL, "fire", 0);
+		fireHeld = false;
+
+		//PlayAnim(ANIMCHANNEL_ALL, "fire", 0);
+		return SRESULT_STAGE(STAGE_WAIT);
+
+	case STAGE_WAIT:
+		if ((!gameLocal.isMultiplayer && (wsfl.lowerWeapon || AnimDone(ANIMCHANNEL_ALL, 0))) || AnimDone(ANIMCHANNEL_ALL, 0)) {
+			SetState("Idle", 0);
+			return SRESULT_DONE;
+		}
+		if (!fireHeld && wsfl.attack && gameLocal.time >= nextAttackTime && AmmoInClip()) {
+			SetState("Fire", 0);
+			return SRESULT_DONE;
+		}
+		if (fireHeld && wsfl.attack && gameLocal.time >= nextAttackTime && AmmoInClip() && !wsfl.lowerWeapon) {
+			SetState("altFire", 0);
+			return SRESULT_DONE;
+		}
+		if (clipSize) {
+			if ((wsfl.netReload || (wsfl.reload && AmmoInClip() < ClipSize() && AmmoAvailable()>AmmoInClip()))) {
+				SetState("Reload", 4);
+				return SRESULT_DONE;
+			}
+		}
+		return SRESULT_WAIT;
+	}
+	return SRESULT_ERROR;
+	
 }
 
 /*
@@ -286,4 +354,3 @@ stateResult_t rvWeaponShotgun::State_Reload ( const stateParms_t& parms ) {
 	}
 	return SRESULT_ERROR;	
 }
-			

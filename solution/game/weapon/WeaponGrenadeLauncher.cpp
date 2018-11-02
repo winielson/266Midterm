@@ -186,11 +186,12 @@ stateResult_t rvWeaponGrenadeLauncher::State_Fire ( const stateParms_t& parms ) 
 			//Attack(false, 15, 10, 0, 1.0f);
 			fireHeld = true; //prohibits hold
 			PlayAnim ( ANIMCHANNEL_ALL, GetFireAnim(), 0 );	
-			if (fireHeld == true){
+			//BIGBOY: Made alt-fire state bc this doesn't work
+			/*if (fireHeld == true){
 				Attack(false, 15, 10, 0, 1.0f);
 				fireHeld = true; //prohibits hold
 				PlayAnim(ANIMCHANNEL_ALL, GetFireAnim(), 0);
-			}
+			}*/
 			return SRESULT_STAGE ( STAGE_WAIT );
 	
 		case STAGE_WAIT:
