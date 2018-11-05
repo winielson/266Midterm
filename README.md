@@ -13,7 +13,7 @@ How to Play Mod
   • Load Quake 4
   • Click Mods option on bottom left of the screen
   • Create a new game and play
-  • Press CTRL + SHIFT + ` to enable console. Type give ammo in order to test all the guns. Type spawn weaponmod_rocketlauncher_homing to enable guided nails mod.
+  • Press CTRL + SHIFT + ` to enable console. Type "give ammo" in order to test all the guns. Type "spawn weaponmod_rocketlauncher_homing" to enable guided nails mod. Type "give shroom" or "give small" to change size, stepsize, and jump. Type "give norm" to go back to restore normal attributes. NOTE: Can only call these once per session.
 
 Weapon Changes:
 
@@ -37,9 +37,47 @@ Shotgun: Alt-fire mode added
 
 HyperBlaster: NO CHANGES
 
+GrenadeLauncher: Grenade Launcher Grenades
+  • When single click, grenade launcher grenades are thrown
+  • When hold click 15 are thrown
+    ◦ Incorporated fireHeld from machinegun.cpp and added alt fire state
+  • Has clipsize of 1 to imitate grenades
 
-
+Nailgun: Rocket Nailgun
+  • Instead of nails, shoots rockets
   
+Rocketlauncher: Nail Launcher
+  • Shoots nails as regular projectiles
+  • When "spawn weaponmod_rocketlauncher_homing" is typed into commands, multiple shot nails can be directed by holding right click
+  
+Railgun: Spartan Laser
+  • Acts like spartan laser from halo 3
+  • Does not shoot until charge time is met
+  • Took charge and update attack logic from blaster.cpp and incorporated it into railgun.cpp
+  
+Lightninggun: NO CHANGES
+
+DMG: NO CHANGES
+
+Napalmgun: Baby Molotovs
+  • Throws baby molotovs instead of napalm gun
+  • Has clipsize of 1 to imitate grenades
+  
+Added Powerups:
+
+Shroom: "give shroom"
+  • Makes player's height, viewheight, crouchheight, crouchviewheight, and stepsize higher 
+  • Makes jumpheight lower
+  
+Shroom: "give small"
+  • Makes player's height, viewheight, crouchheight, crouchviewheight, and stepsize smaller
+  • Makes jumpheight higher
+  
+Shroom: "give norm"
+  • Restores default player state
+  
+Wallrunning: Walking speed is higher so acts as running. Wallrunning is like CS surfing. Can go up and slide slopes easily, but not flat walls. 
+
   
   
   
